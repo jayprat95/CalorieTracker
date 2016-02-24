@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		E4E85C5BDB83F947AE49C8AC /* libPods-CalorieTracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C59E28CF4E2D5542621A38D /* libPods-CalorieTracker.a */; };
+		F652C45C1C7E240D003980C4 /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F652C4591C7E240D003980C4 /* User+CoreDataProperties.m */; };
+		F652C45D1C7E240D003980C4 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F652C45B1C7E240D003980C4 /* User.m */; };
+		F652C4621C7E2439003980C4 /* Dish+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F652C45F1C7E2439003980C4 /* Dish+CoreDataProperties.m */; };
+		F652C4631C7E2439003980C4 /* Dish.m in Sources */ = {isa = PBXBuildFile; fileRef = F652C4611C7E2439003980C4 /* Dish.m */; };
+		F652C4681C7E2481003980C4 /* Date+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F652C4651C7E2481003980C4 /* Date+CoreDataProperties.m */; };
+		F652C4691C7E2481003980C4 /* Date.m in Sources */ = {isa = PBXBuildFile; fileRef = F652C4671C7E2481003980C4 /* Date.m */; };
 		F6BFB86E1C651F720056C268 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BFB86D1C651F720056C268 /* main.m */; };
 		F6BFB8711C651F720056C268 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BFB8701C651F720056C268 /* AppDelegate.m */; };
 		F6BFB8741C651F720056C268 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BFB8731C651F720056C268 /* ViewController.m */; };
@@ -40,6 +46,18 @@
 		4310C0EE1C47F7C95922C411 /* Pods-CalorieTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalorieTracker/Pods-CalorieTracker.release.xcconfig"; sourceTree = "<group>"; };
 		8D11EDB550C48A2D33855C77 /* Pods-CalorieTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalorieTracker/Pods-CalorieTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		9C59E28CF4E2D5542621A38D /* libPods-CalorieTracker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CalorieTracker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F652C4581C7E240D003980C4 /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F652C4591C7E240D003980C4 /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F652C45A1C7E240D003980C4 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		F652C45B1C7E240D003980C4 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		F652C45E1C7E2439003980C4 /* Dish+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Dish+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F652C45F1C7E2439003980C4 /* Dish+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Dish+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F652C4601C7E2439003980C4 /* Dish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dish.h; sourceTree = "<group>"; };
+		F652C4611C7E2439003980C4 /* Dish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dish.m; sourceTree = "<group>"; };
+		F652C4641C7E2481003980C4 /* Date+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Date+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F652C4651C7E2481003980C4 /* Date+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Date+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F652C4661C7E2481003980C4 /* Date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Date.h; sourceTree = "<group>"; };
+		F652C4671C7E2481003980C4 /* Date.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Date.m; sourceTree = "<group>"; };
 		F6BFB8691C651F720056C268 /* CalorieTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalorieTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6BFB86D1C651F720056C268 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F6BFB86F1C651F720056C268 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -102,6 +120,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F652C46A1C7E2496003980C4 /* basic_objects */ = {
+			isa = PBXGroup;
+			children = (
+				F652C4581C7E240D003980C4 /* User+CoreDataProperties.h */,
+				F652C4591C7E240D003980C4 /* User+CoreDataProperties.m */,
+				F652C45A1C7E240D003980C4 /* User.h */,
+				F652C45B1C7E240D003980C4 /* User.m */,
+				F652C45E1C7E2439003980C4 /* Dish+CoreDataProperties.h */,
+				F652C45F1C7E2439003980C4 /* Dish+CoreDataProperties.m */,
+				F652C4601C7E2439003980C4 /* Dish.h */,
+				F652C4611C7E2439003980C4 /* Dish.m */,
+				F652C4641C7E2481003980C4 /* Date+CoreDataProperties.h */,
+				F652C4651C7E2481003980C4 /* Date+CoreDataProperties.m */,
+				F652C4661C7E2481003980C4 /* Date.h */,
+				F652C4671C7E2481003980C4 /* Date.m */,
+			);
+			name = basic_objects;
+			sourceTree = "<group>";
+		};
 		F6BFB8601C651F720056C268 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +174,7 @@
 				F6BFB8801C651F720056C268 /* Info.plist */,
 				F6BFB8781C651F720056C268 /* CalorieTracker.xcdatamodeld */,
 				F6BFB86C1C651F720056C268 /* Supporting Files */,
+				F652C46A1C7E2496003980C4 /* basic_objects */,
 			);
 			path = CalorieTracker;
 			sourceTree = "<group>";
@@ -348,9 +386,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F652C45C1C7E240D003980C4 /* User+CoreDataProperties.m in Sources */,
+				F652C4631C7E2439003980C4 /* Dish.m in Sources */,
 				F6BFB8741C651F720056C268 /* ViewController.m in Sources */,
+				F652C45D1C7E240D003980C4 /* User.m in Sources */,
 				F6BFB8711C651F720056C268 /* AppDelegate.m in Sources */,
+				F652C4691C7E2481003980C4 /* Date.m in Sources */,
+				F652C4681C7E2481003980C4 /* Date+CoreDataProperties.m in Sources */,
 				F6BFB87A1C651F720056C268 /* CalorieTracker.xcdatamodeld in Sources */,
+				F652C4621C7E2439003980C4 /* Dish+CoreDataProperties.m in Sources */,
 				F6BFB86E1C651F720056C268 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

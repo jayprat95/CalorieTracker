@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15A284" minimumToolsVersion="Automatic">
-    <entity name="Date" syncable="YES">
+    <entity name="Date" representedClassName="Date" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
         <relationship name="dishes" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Dish" inverseName="date" inverseEntity="Dish" syncable="YES"/>
         <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="dates" inverseEntity="User" syncable="YES"/>
     </entity>
-    <entity name="Dish" syncable="YES">
+    <entity name="Dish" representedClassName="Dish" syncable="YES">
         <attribute name="allergens" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="calcium" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="calories" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -28,7 +28,7 @@
         <attribute name="vitamin_c" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="date" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Date" inverseName="dishes" inverseEntity="Date" syncable="YES"/>
     </entity>
-    <entity name="User" syncable="YES">
+    <entity name="User" representedClassName="User" syncable="YES">
         <relationship name="dates" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Date" inverseName="user" inverseEntity="Date" syncable="YES"/>
     </entity>
     <elements>
