@@ -14,6 +14,8 @@
 		F652C4631C7E2439003980C4 /* Dish.m in Sources */ = {isa = PBXBuildFile; fileRef = F652C4611C7E2439003980C4 /* Dish.m */; };
 		F652C4681C7E2481003980C4 /* Date+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F652C4651C7E2481003980C4 /* Date+CoreDataProperties.m */; };
 		F652C4691C7E2481003980C4 /* Date.m in Sources */ = {isa = PBXBuildFile; fileRef = F652C4671C7E2481003980C4 /* Date.m */; };
+		F652C46C1C7E28F7003980C4 /* DishTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F652C46B1C7E28F7003980C4 /* DishTest.m */; };
+		F652C46E1C7E2DE3003980C4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F652C46D1C7E2DE3003980C4 /* CoreData.framework */; };
 		F6BFB86E1C651F720056C268 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BFB86D1C651F720056C268 /* main.m */; };
 		F6BFB8711C651F720056C268 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BFB8701C651F720056C268 /* AppDelegate.m */; };
 		F6BFB8741C651F720056C268 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BFB8731C651F720056C268 /* ViewController.m */; };
@@ -58,6 +60,8 @@
 		F652C4651C7E2481003980C4 /* Date+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Date+CoreDataProperties.m"; sourceTree = "<group>"; };
 		F652C4661C7E2481003980C4 /* Date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Date.h; sourceTree = "<group>"; };
 		F652C4671C7E2481003980C4 /* Date.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Date.m; sourceTree = "<group>"; };
+		F652C46B1C7E28F7003980C4 /* DishTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DishTest.m; sourceTree = "<group>"; };
+		F652C46D1C7E2DE3003980C4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		F6BFB8691C651F720056C268 /* CalorieTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalorieTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6BFB86D1C651F720056C268 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F6BFB86F1C651F720056C268 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F652C46E1C7E2DE3003980C4 /* CoreData.framework in Frameworks */,
 				E4E85C5BDB83F947AE49C8AC /* libPods-CalorieTracker.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,6 +120,7 @@
 		E147E0B0FD830A3A12C9F209 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F652C46D1C7E2DE3003980C4 /* CoreData.framework */,
 				9C59E28CF4E2D5542621A38D /* libPods-CalorieTracker.a */,
 			);
 			name = Frameworks;
@@ -192,6 +198,7 @@
 			children = (
 				F6BFB8891C651F730056C268 /* CalorieTrackerTests.m */,
 				F6BFB88B1C651F730056C268 /* Info.plist */,
+				F652C46B1C7E28F7003980C4 /* DishTest.m */,
 			);
 			path = CalorieTrackerTests;
 			sourceTree = "<group>";
@@ -404,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6BFB88A1C651F730056C268 /* CalorieTrackerTests.m in Sources */,
+				F652C46C1C7E28F7003980C4 /* DishTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,7 +26,7 @@
 @dynamic serving_size;
 @dynamic sodium;
 @dynamic sugar;
-@dynamic timestamp;
+@dynamic timeStamp;
 @dynamic title;
 @dynamic total_fat;
 @dynamic trans_fat;

@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, retain) NSString *serving_size;
 @property (nonatomic) int16_t sodium;
 @property (nonatomic) int16_t sugar;
-@property (nonatomic) NSTimeInterval timestamp;
+@property (nonatomic) NSDate* timeStamp;
 @property (nullable, nonatomic, retain) NSString *title;
 @property (nonatomic) int16_t total_fat;
 @property (nonatomic) int16_t trans_fat;
