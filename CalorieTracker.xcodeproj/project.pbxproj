@@ -179,8 +179,8 @@
 				F6BFB87D1C651F720056C268 /* LaunchScreen.storyboard */,
 				F6BFB8801C651F720056C268 /* Info.plist */,
 				F6BFB8781C651F720056C268 /* CalorieTracker.xcdatamodeld */,
-				F6BFB86C1C651F720056C268 /* Supporting Files */,
 				F652C46A1C7E2496003980C4 /* basic_objects */,
+				F6BFB86C1C651F720056C268 /* Supporting Files */,
 			);
 			path = CalorieTracker;
 			sourceTree = "<group>";

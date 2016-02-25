@@ -75,14 +75,59 @@
     [fetchRequest setEntity:
      [NSEntityDescription entityForName:@"Dish" inManagedObjectContext:self.moc]];
     
-    NSArray *dishes = [self.moc
-                                       executeFetchRequest:fetchRequest error:&error];
+    NSArray *dishes = [self.moc executeFetchRequest:fetchRequest error:&error];
     Dish *dish2 = dishes[0];
     XCTAssertEqual(@"Tomato", dish2.title, @"Should be the same title");
     XCTAssertEqual(200, dish2.calories, @"Should be the same amount of calories");
     
     
 }
+
+- (void)testDeletingCoreDataObject {
+    // This is an example of a functional test case.
+    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    Dish *newDish = [NSEntityDescription insertNewObjectForEntityForName:@"Dish" inManagedObjectContext:self.moc];
+    newDish.title = @"Tomato";
+    newDish.timeStamp = [NSDate date];
+    newDish.calories = 200;
+    
+    // Save the context.
+    NSError *error = nil;
+    if (![self.moc save:&error]) {
+        // Replace this implementation with code to handle the error appropriately.
+        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+        XCTFail(@"Error saving in \"%s\" : %@, %@", __PRETTY_FUNCTION__, error, [error userInfo]);
+    }
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    [fetchRequest setEntity:
+     [NSEntityDescription entityForName:@"Dish" inManagedObjectContext:self.moc]];
+    
+    NSArray *dishes = [self.moc executeFetchRequest:fetchRequest error:&error];
+    Dish *dish2 = dishes[0];
+    XCTAssertEqual(@"Tomato", dish2.title, @"Should be the same title");
+    XCTAssertEqual(200, dish2.calories, @"Should be the same amount of calories");
+    XCTAssertEqual(1, [dishes count], "Should only have one dish");
+    
+    
+    //delete the object from the managedobjectcontext
+    [self.moc deleteObject:newDish];
+    error = nil;
+    if (![self.moc save:&error]) {
+        // Replace this implementation with code to handle the error appropriately.
+        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+        XCTFail(@"Error saving in \"%s\" : %@, %@", __PRETTY_FUNCTION__, error, [error userInfo]);
+    }
+    
+    //fetch list of dishes
+    dishes = [self.moc executeFetchRequest:fetchRequest error:&error];
+    
+    //should be no dishes
+    XCTAssertEqual(0, [dishes count], "Should be empty");
+    
+    
+}
+
 
 //- (void)testPerformanceExample {
 //    // This is an example of a performance test case.
