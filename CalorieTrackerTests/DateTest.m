@@ -73,18 +73,18 @@
     
 }
 
-- (void)testAddDish
+- (void)testAddDate
 {
     
     Date *date = [NSEntityDescription insertNewObjectForEntityForName:@"Date" inManagedObjectContext:self.moc];
     
-    NSMutableArray *dishList = [[NSMutableArray alloc] init];
-    
-    Dish *newDish = [NSEntityDescription insertNewObjectForEntityForName:@"Dish" inManagedObjectContext:self.moc];
-    
-    [dishList addObject:newDish];
-    
-    date.dishes = dishList;
+//    NSMutableArray *dishList = [[NSMutableArray alloc] init];
+//    
+//    Dish *newDish = [NSEntityDescription insertNewObjectForEntityForName:@"Dish" inManagedObjectContext:self.moc];
+//    
+//    [dishList addObject:newDish];
+//    
+//    date.dishes = dishList;
     
     // Save the context.
     
@@ -108,14 +108,17 @@
     
     NSArray *dates = [self.moc executeFetchRequest:fetchRequest error:&error];
     Date *date2 = dates[0];
-    Date *testDate = [NSDate date];
+    
+    Date *testDate = [[Date alloc] init]; // = [NSDate date];
+    NSDate *actualDate = [[NSDate alloc] init];
+    testDate.date = actualDate;
     XCTAssertNotEqual(testDate.date, date2.date, @"Dates should not be same");
     
 }
 
 
 
-- (void)testRemoveDish
+- (void)testRemoveDate
 
 {
     
