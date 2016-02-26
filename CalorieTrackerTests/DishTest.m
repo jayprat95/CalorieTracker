@@ -11,6 +11,7 @@
 #import "Dish.h"
 
 @interface DishTest : XCTestCase
+//test managed object context for later user
 @property (nonatomic,retain) NSManagedObjectContext *moc;
 @end
 
