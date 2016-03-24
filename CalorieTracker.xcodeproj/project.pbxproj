@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2760BA7E1CA34B470022B05E /* FoodTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2760BA7D1CA34B470022B05E /* FoodTableViewController.m */; };
+		2760BA811CA34F430022B05E /* NutritionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2760BA801CA34F430022B05E /* NutritionViewController.m */; };
 		84886E601C80D7B3002C1683 /* DateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84886E5F1C80D7B3002C1683 /* DateTest.m */; };
 		84886E621C80D7D6002C1683 /* UserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84886E611C80D7D6002C1683 /* UserTest.m */; };
 		84E6D7E11C9F5C8D00C9DC09 /* DiningTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E6D7E01C9F5C8D00C9DC09 /* DiningTableViewController.m */; };
@@ -48,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2760BA7C1CA34B470022B05E /* FoodTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoodTableViewController.h; path = ../FoodTableViewController.h; sourceTree = "<group>"; };
+		2760BA7D1CA34B470022B05E /* FoodTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoodTableViewController.m; path = ../FoodTableViewController.m; sourceTree = "<group>"; };
+		2760BA7F1CA34F430022B05E /* NutritionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NutritionViewController.h; sourceTree = "<group>"; };
+		2760BA801CA34F430022B05E /* NutritionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NutritionViewController.m; sourceTree = "<group>"; };
 		4310C0EE1C47F7C95922C411 /* Pods-CalorieTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalorieTracker/Pods-CalorieTracker.release.xcconfig"; sourceTree = "<group>"; };
 		84886E5F1C80D7B3002C1683 /* DateTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTest.m; sourceTree = "<group>"; };
 		84886E611C80D7D6002C1683 /* UserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTest.m; sourceTree = "<group>"; };
@@ -177,12 +183,16 @@
 		F6BFB86B1C651F720056C268 /* CalorieTracker */ = {
 			isa = PBXGroup;
 			children = (
+				2760BA7C1CA34B470022B05E /* FoodTableViewController.h */,
+				2760BA7D1CA34B470022B05E /* FoodTableViewController.m */,
+				84E6D7DF1C9F5C8D00C9DC09 /* DiningTableViewController.h */,
+				84E6D7E01C9F5C8D00C9DC09 /* DiningTableViewController.m */,
+				2760BA7F1CA34F430022B05E /* NutritionViewController.h */,
+				2760BA801CA34F430022B05E /* NutritionViewController.m */,
 				F6BFB86F1C651F720056C268 /* AppDelegate.h */,
 				F6BFB8701C651F720056C268 /* AppDelegate.m */,
 				F6BFB8721C651F720056C268 /* ViewController.h */,
 				F6BFB8731C651F720056C268 /* ViewController.m */,
-				84E6D7DF1C9F5C8D00C9DC09 /* DiningTableViewController.h */,
-				84E6D7E01C9F5C8D00C9DC09 /* DiningTableViewController.m */,
 				F6BFB8751C651F720056C268 /* Main.storyboard */,
 				F6BFB87B1C651F720056C268 /* Assets.xcassets */,
 				F6BFB87D1C651F720056C268 /* LaunchScreen.storyboard */,
@@ -404,9 +414,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2760BA811CA34F430022B05E /* NutritionViewController.m in Sources */,
 				F652C45C1C7E240D003980C4 /* User+CoreDataProperties.m in Sources */,
 				F652C4631C7E2439003980C4 /* Dish.m in Sources */,
 				F6BFB8741C651F720056C268 /* ViewController.m in Sources */,
+				2760BA7E1CA34B470022B05E /* FoodTableViewController.m in Sources */,
 				F652C45D1C7E240D003980C4 /* User.m in Sources */,
 				F6BFB8711C651F720056C268 /* AppDelegate.m in Sources */,
 				84E6D7E11C9F5C8D00C9DC09 /* DiningTableViewController.m in Sources */,

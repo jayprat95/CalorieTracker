@@ -1,21 +1,19 @@
 //
-//  DataTableViewController.m
+//  FoodTableViewController.m
 //  CalorieTracker
 //
-//  Created by Julia on 3/20/16.
+//  Created by Amin Davoodi on 3/23/16.
 //  Copyright © 2016 TouchTap. All rights reserved.
 //
 
-#import "DiningTableViewController.h"
 #import "FoodTableViewController.h"
-@import UIKit;
-@import Foundation;
+#import "NutritionViewController.h"
 
-@interface DiningTableViewController ()
+@interface FoodTableViewController ()
 
 @end
 
-@implementation DiningTableViewController
+@implementation FoodTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -32,6 +30,21 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"FoodLabelCell"forIndexPath:indexPath];
+    
+    // Static dining halls
+    NSArray *dummyFoods = @[@"Cheese Pizza", @"Peppearoni Pizza", @"Strawberry Ice Cream", @"Orange Juice", @"Apple Juice", @"Chocolate Milk", @"Sandwich", @"West End", @"California Roll", @"Spicy Tuna Roll"];
+    
+    // Configure the cell...
+    cell.textLabel.text = (@"%@", dummyFoods[indexPath.row]);
+    return cell;
+}
+
+- (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger) nameOfDiningHall {
+    return @"Turners";
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -39,44 +52,21 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 8;
+    return 10;
 }
-
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"LabelCell"forIndexPath:indexPath];
-    
-    if (cell == nil)
-    {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"LabelCell"];
-    }
-    
-    // Static dining halls
-    NSArray *diningHalls = @[@"Au Bon Pain", @"D2", @"Deets", @"DXpress", @"Hokie Grill", @"Owens", @"Turner", @"West End"];
-    
-    // Configure the cell...
-    cell.textLabel.text = (@"%@", diningHalls[indexPath.row]);
-    return cell;
-}
-
-- (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger) nameOfDiningHall {
-    return @"Dining Halls";
-}
-
-//
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    NSLog(@"Running");
-//    if ([segue.identifier isEqualToString:@"DiningToFoods"]) {
-////        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-////        FoodTableViewController *destViewController = (FoodTableViewController *) segue.destinationViewController;
-////        destViewController.recipeName = [recipes objectAtIndex:indexPath.row];
-//    }
-//}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self performSegueWithIdentifier:@("DiningToFoods") sender:self];
+    [self performSegueWithIdentifier:@("FoodsToNutrition") sender:self];
 }
+
+
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FoodLabelCell" forIndexPath:indexPath];
+//    
+//    return cell;
+//}
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -121,6 +111,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
 
 @end
