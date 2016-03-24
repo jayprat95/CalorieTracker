@@ -14,11 +14,35 @@ PODS:
   - AFNetworking/Serialization (3.0.4)
   - AFNetworking/UIKit (3.0.4):
     - AFNetworking/NSURLSession
+  - BFPaperButton (2.0.27):
+    - UIColor+BFPaperColors
+  - Canvas (0.1.2)
+  - DZNEmptyDataSet (1.7.3)
+  - FrameAccessor (1.3.2)
+  - GraphKit (1.1.1):
+    - FrameAccessor (~> 1.3.2)
+    - MKFoundationKit/NSArray (~> 1.2.2)
+  - MKFoundationKit/NSArray (1.2.3)
+  - Onboard (2.1.8)
+  - UIColor+BFPaperColors (1.7.2)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - BFPaperButton (~> 2.0.18)
+  - Canvas
+  - DZNEmptyDataSet
+  - GraphKit
+  - Onboard
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  BFPaperButton: 3938d9b1a430dcdbe7f3eb1d17f4d92c67828097
+  Canvas: eb861e3b555d032648146c8ffda1a5dea40059ca
+  DZNEmptyDataSet: dd7cca17c1d07dfa78956859b1e70a52505678ef
+  FrameAccessor: 0f7ba6ce37be9a5d0302a27c731dca70af8d438b
+  GraphKit: e2336bed87d9313020af525dedbca54b62e93533
+  MKFoundationKit: 882d74557944790d4d9e172961ed71d6a66804b7
+  Onboard: 209cc1972bacdcf04f0f9cc491936b2c21d4bdb4
+  UIColor+BFPaperColors: 03101fe6c10ed00c6daae7c26553f1de41500853
 
 COCOAPODS: 0.39.0

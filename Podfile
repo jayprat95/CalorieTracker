@@ -5,7 +5,11 @@
 
 target 'CalorieTracker' do
 pod 'AFNetworking', '~> 3.0'
-
+pod 'Canvas'
+pod 'BFPaperButton', '~> 2.0.18'
+pod 'GraphKit'
+pod 'Onboard' 
+pod 'DZNEmptyDataSet'
 end
 
 target 'CalorieTrackerTests' do

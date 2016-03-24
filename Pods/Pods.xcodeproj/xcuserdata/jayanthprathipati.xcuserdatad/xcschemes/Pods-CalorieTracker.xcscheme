@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '6BB391750CC6E076E1AA68C5'
+               BlueprintIdentifier = '452ED49E7B5147C37CAE536F'
                BlueprintName = 'Pods-CalorieTracker'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-CalorieTracker.a'>

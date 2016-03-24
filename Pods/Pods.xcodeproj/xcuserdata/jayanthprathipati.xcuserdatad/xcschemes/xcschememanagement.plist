@@ -9,7 +9,47 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>BFPaperButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Canvas.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>DZNEmptyDataSet.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FrameAccessor.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GraphKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MKFoundationKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Onboard.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-CalorieTracker.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>UIColor+BFPaperColors.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +57,52 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>718D4603F3A1202FEE962B38720C237A</key>
+		<key>0F7B1940DE10624DFABB6A65D0BE9B4A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>597F56C54F2050BEE2BF6BC5DE49D44C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>59896BC288E264C4AD31DC0950156076</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5DE1E678D02D20104A3F411BCA5F4463</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>736E57AD5AEFAAF68D47AE4E8FCB8F68</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>928353533005A4198EBDA5B700D37B64</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>951BAA5FA8501628A76E1461A7BA9AA9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>970176E4C248C9FFA9FFEE0933B897DC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CC583880AD24A30C69B268B072649FE3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FDBE66BB08E9EB83BAF70804014BA195</key>
 		<dict>
 			<key>primary</key>
 			<true/>

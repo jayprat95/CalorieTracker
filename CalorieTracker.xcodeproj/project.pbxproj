@@ -10,6 +10,7 @@
 		84886E601C80D7B3002C1683 /* DateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84886E5F1C80D7B3002C1683 /* DateTest.m */; };
 		84886E621C80D7D6002C1683 /* UserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84886E611C80D7D6002C1683 /* UserTest.m */; };
 		E4E85C5BDB83F947AE49C8AC /* libPods-CalorieTracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C59E28CF4E2D5542621A38D /* libPods-CalorieTracker.a */; };
+		F6272A901CA431EE00A5AA54 /* TPTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6272A8F1CA431EE00A5AA54 /* TPTabBarController.m */; };
 		F652C45C1C7E240D003980C4 /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F652C4591C7E240D003980C4 /* User+CoreDataProperties.m */; };
 		F652C45D1C7E240D003980C4 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F652C45B1C7E240D003980C4 /* User.m */; };
 		F652C4621C7E2439003980C4 /* Dish+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F652C45F1C7E2439003980C4 /* Dish+CoreDataProperties.m */; };
@@ -52,6 +53,8 @@
 		84886E611C80D7D6002C1683 /* UserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTest.m; sourceTree = "<group>"; };
 		8D11EDB550C48A2D33855C77 /* Pods-CalorieTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalorieTracker/Pods-CalorieTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		9C59E28CF4E2D5542621A38D /* libPods-CalorieTracker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CalorieTracker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6272A8E1CA431EE00A5AA54 /* TPTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPTabBarController.h; sourceTree = "<group>"; };
+		F6272A8F1CA431EE00A5AA54 /* TPTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPTabBarController.m; sourceTree = "<group>"; };
 		F652C4581C7E240D003980C4 /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataProperties.h"; sourceTree = "<group>"; };
 		F652C4591C7E240D003980C4 /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataProperties.m"; sourceTree = "<group>"; };
 		F652C45A1C7E240D003980C4 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -179,6 +182,8 @@
 				F6BFB8721C651F720056C268 /* ViewController.h */,
 				F6BFB8731C651F720056C268 /* ViewController.m */,
 				F6BFB8751C651F720056C268 /* Main.storyboard */,
+				F6272A8E1CA431EE00A5AA54 /* TPTabBarController.h */,
+				F6272A8F1CA431EE00A5AA54 /* TPTabBarController.m */,
 				F6BFB87B1C651F720056C268 /* Assets.xcassets */,
 				F6BFB87D1C651F720056C268 /* LaunchScreen.storyboard */,
 				F6BFB8801C651F720056C268 /* Info.plist */,
@@ -399,6 +404,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6272A901CA431EE00A5AA54 /* TPTabBarController.m in Sources */,
 				F652C45C1C7E240D003980C4 /* User+CoreDataProperties.m in Sources */,
 				F652C4631C7E2439003980C4 /* Dish.m in Sources */,
 				F6BFB8741C651F720056C268 /* ViewController.m in Sources */,
