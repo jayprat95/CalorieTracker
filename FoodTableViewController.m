@@ -8,6 +8,7 @@
 
 #import "FoodTableViewController.h"
 #import "NutritionViewController.h"
+#import "FoodsCell.h"
 
 @interface FoodTableViewController ()
 
@@ -17,6 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self.tableView registerClass:[FoodsCell class] forCellReuseIdentifier:@"FoodCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"CustomFoodCell" bundle:nil] forCellReuseIdentifier:@"FoodCell"];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -30,14 +34,26 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"FoodLabelCell"forIndexPath:indexPath];
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    FoodsCell *cell = (FoodsCell *) [tableView dequeueReusableCellWithIdentifier: @"FoodCell"forIndexPath:indexPath];
+    
+    // Check null
+    if (cell == nil)
+    {
+        cell = [[[NSBundle mainBundle]loadNibNamed:@"CustomFoodCell" owner:self options:nil]objectAtIndex:0];
+    }
     
     // Static dining halls
-    NSArray *dummyFoods = @[@"Cheese Pizza", @"Peppearoni Pizza", @"Strawberry Ice Cream", @"Orange Juice", @"Apple Juice", @"Chocolate Milk", @"Sandwich", @"West End", @"California Roll", @"Spicy Tuna Roll"];
+    NSArray *dummyFoods = @[@"Cheese Pizza", @"Peppearoni Pizza", @"Strawberry Ice Cream", @"Orange Juice", @"Apple Juice", @"Chocolate Milk", @"Sandwich", @"Crackers", @"California Roll", @"Spicy Tuna Roll"];
+    
+    NSArray *dummyCals = @[@"500", @"600", @"400", @"200", @"240", @"320", @"790", @"150", @"220", @"360"];
     
     // Configure the cell...
-    cell.textLabel.text = (@"%@", dummyFoods[indexPath.row]);
+//    cell.textLabel.text = @"WHY";
+//    cell.FoodNameLabel.text = @"TEST";
+    cell.FoodNameLabel.text = (@"%@", dummyFoods[indexPath.row]);
+    cell.CalLabel.text = (@"%@", dummyCals[indexPath.row]);
     return cell;
 }
 
@@ -60,6 +76,11 @@
     [self performSegueWithIdentifier:@("FoodsToNutrition") sender:self];
 }
 
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 70;
+}
 
 //- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 //    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FoodLabelCell" forIndexPath:indexPath];

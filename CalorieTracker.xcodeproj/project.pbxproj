@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2741ABFC1CA438110006D035 /* CustomFoodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2741ABFB1CA438110006D035 /* CustomFoodCell.xib */; };
+		2741ABFF1CA439C20006D035 /* FoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2741ABFE1CA439C20006D035 /* FoodsCell.m */; };
 		2760BA7E1CA34B470022B05E /* FoodTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2760BA7D1CA34B470022B05E /* FoodTableViewController.m */; };
 		2760BA811CA34F430022B05E /* NutritionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2760BA801CA34F430022B05E /* NutritionViewController.m */; };
 		84886E601C80D7B3002C1683 /* DateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84886E5F1C80D7B3002C1683 /* DateTest.m */; };
@@ -50,6 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2741ABFB1CA438110006D035 /* CustomFoodCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomFoodCell.xib; sourceTree = "<group>"; };
+		2741ABFD1CA439C20006D035 /* FoodsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodsCell.h; sourceTree = "<group>"; };
+		2741ABFE1CA439C20006D035 /* FoodsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodsCell.m; sourceTree = "<group>"; };
 		2760BA7C1CA34B470022B05E /* FoodTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoodTableViewController.h; path = ../FoodTableViewController.h; sourceTree = "<group>"; };
 		2760BA7D1CA34B470022B05E /* FoodTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoodTableViewController.m; path = ../FoodTableViewController.m; sourceTree = "<group>"; };
 		2760BA7F1CA34F430022B05E /* NutritionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NutritionViewController.h; sourceTree = "<group>"; };
@@ -185,6 +190,9 @@
 			children = (
 				2760BA7C1CA34B470022B05E /* FoodTableViewController.h */,
 				2760BA7D1CA34B470022B05E /* FoodTableViewController.m */,
+				2741ABFB1CA438110006D035 /* CustomFoodCell.xib */,
+				2741ABFD1CA439C20006D035 /* FoodsCell.h */,
+				2741ABFE1CA439C20006D035 /* FoodsCell.m */,
 				84E6D7DF1C9F5C8D00C9DC09 /* DiningTableViewController.h */,
 				84E6D7E01C9F5C8D00C9DC09 /* DiningTableViewController.m */,
 				2760BA7F1CA34F430022B05E /* NutritionViewController.h */,
@@ -341,6 +349,7 @@
 			files = (
 				F6BFB87F1C651F720056C268 /* LaunchScreen.storyboard in Resources */,
 				F6BFB87C1C651F720056C268 /* Assets.xcassets in Resources */,
+				2741ABFC1CA438110006D035 /* CustomFoodCell.xib in Resources */,
 				F6BFB8771C651F720056C268 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2741ABFF1CA439C20006D035 /* FoodsCell.m in Sources */,
 				2760BA811CA34F430022B05E /* NutritionViewController.m in Sources */,
 				F652C45C1C7E240D003980C4 /* User+CoreDataProperties.m in Sources */,
 				F652C4631C7E2439003980C4 /* Dish.m in Sources */,
