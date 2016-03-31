@@ -10,9 +10,6 @@
 
 @implementation FoodsCell
 
-@synthesize FoodNameLabel = _FoodNameLabel;
-@synthesize CalLabel = _CalLabel;
-
 - (void)awakeFromNib {
     // Initialization code
 }

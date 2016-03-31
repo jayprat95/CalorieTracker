@@ -11,6 +11,8 @@
 		2741ABFF1CA439C20006D035 /* FoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2741ABFE1CA439C20006D035 /* FoodsCell.m */; };
 		2760BA7E1CA34B470022B05E /* FoodTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2760BA7D1CA34B470022B05E /* FoodTableViewController.m */; };
 		2760BA811CA34F430022B05E /* NutritionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2760BA801CA34F430022B05E /* NutritionViewController.m */; };
+		27A01E3F1CA4A9AC00764D4D /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A01E3E1CA4A9AC00764D4D /* Parser.m */; };
+		27A01E431CA4B2D400764D4D /* westend.csv in Resources */ = {isa = PBXBuildFile; fileRef = 27A01E421CA4B2D400764D4D /* westend.csv */; };
 		84886E601C80D7B3002C1683 /* DateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84886E5F1C80D7B3002C1683 /* DateTest.m */; };
 		84886E621C80D7D6002C1683 /* UserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84886E611C80D7D6002C1683 /* UserTest.m */; };
 		84E6D7E11C9F5C8D00C9DC09 /* DiningTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E6D7E01C9F5C8D00C9DC09 /* DiningTableViewController.m */; };
@@ -59,6 +61,9 @@
 		2760BA7D1CA34B470022B05E /* FoodTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoodTableViewController.m; path = ../FoodTableViewController.m; sourceTree = "<group>"; };
 		2760BA7F1CA34F430022B05E /* NutritionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NutritionViewController.h; sourceTree = "<group>"; };
 		2760BA801CA34F430022B05E /* NutritionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NutritionViewController.m; sourceTree = "<group>"; };
+		27A01E3D1CA4A9AC00764D4D /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
+		27A01E3E1CA4A9AC00764D4D /* Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parser.m; sourceTree = "<group>"; };
+		27A01E421CA4B2D400764D4D /* westend.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = westend.csv; sourceTree = "<group>"; };
 		4310C0EE1C47F7C95922C411 /* Pods-CalorieTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalorieTracker/Pods-CalorieTracker.release.xcconfig"; sourceTree = "<group>"; };
 		84886E5F1C80D7B3002C1683 /* DateTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTest.m; sourceTree = "<group>"; };
 		84886E611C80D7D6002C1683 /* UserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTest.m; sourceTree = "<group>"; };
@@ -166,6 +171,7 @@
 		F6BFB8601C651F720056C268 = {
 			isa = PBXGroup;
 			children = (
+				27A01E421CA4B2D400764D4D /* westend.csv */,
 				F6BFB86B1C651F720056C268 /* CalorieTracker */,
 				F6BFB8881C651F730056C268 /* CalorieTrackerTests */,
 				F6BFB8931C651F730056C268 /* CalorieTrackerUITests */,
@@ -198,6 +204,8 @@
 				2760BA7F1CA34F430022B05E /* NutritionViewController.h */,
 				2760BA801CA34F430022B05E /* NutritionViewController.m */,
 				F6BFB86F1C651F720056C268 /* AppDelegate.h */,
+				27A01E3D1CA4A9AC00764D4D /* Parser.h */,
+				27A01E3E1CA4A9AC00764D4D /* Parser.m */,
 				F6BFB8701C651F720056C268 /* AppDelegate.m */,
 				F6BFB8721C651F720056C268 /* ViewController.h */,
 				F6BFB8731C651F720056C268 /* ViewController.m */,
@@ -349,6 +357,7 @@
 			files = (
 				F6BFB87F1C651F720056C268 /* LaunchScreen.storyboard in Resources */,
 				F6BFB87C1C651F720056C268 /* Assets.xcassets in Resources */,
+				27A01E431CA4B2D400764D4D /* westend.csv in Resources */,
 				2741ABFC1CA438110006D035 /* CustomFoodCell.xib in Resources */,
 				F6BFB8771C651F720056C268 /* Main.storyboard in Resources */,
 			);
@@ -427,6 +436,7 @@
 				2760BA811CA34F430022B05E /* NutritionViewController.m in Sources */,
 				F652C45C1C7E240D003980C4 /* User+CoreDataProperties.m in Sources */,
 				F652C4631C7E2439003980C4 /* Dish.m in Sources */,
+				27A01E3F1CA4A9AC00764D4D /* Parser.m in Sources */,
 				F6BFB8741C651F720056C268 /* ViewController.m in Sources */,
 				2760BA7E1CA34B470022B05E /* FoodTableViewController.m in Sources */,
 				F652C45D1C7E240D003980C4 /* User.m in Sources */,

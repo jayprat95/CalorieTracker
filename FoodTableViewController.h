@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NutritionViewController.h"
+#import "FoodsCell.h"
+#import "Dish.h"
+#import "Parser.h"
 
 @interface FoodTableViewController : UITableViewController
+
+@property NSMutableArray *dishList;
+@property double dick;
 
 @end

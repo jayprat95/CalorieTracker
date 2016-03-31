@@ -15,26 +15,26 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Dish (CoreDataProperties)
 
-@property (nullable, nonatomic, retain) NSData *allergens;
-@property (nonatomic) int16_t calcium;
-@property (nonatomic) int16_t calories;
-@property (nonatomic) int16_t carbs;
-@property (nonatomic) int16_t cholesterol;
-@property (nonatomic) int16_t fiber;
-@property (nonatomic) int16_t iron;
-@property (nonatomic) int16_t potassium;
-@property (nonatomic) int16_t protein;
-@property (nonatomic) int16_t sat_fat;
+@property (nullable, nonatomic, retain) NSString *allergens;
+@property (nonatomic) NSString *calcium;
+@property (nonatomic) NSString *calories;
+@property (nonatomic) NSString *carbs;
+@property (nonatomic) NSString *cholesterol;
+@property (nonatomic) NSString *fiber;
+@property (nonatomic) NSString *iron;
+@property (nonatomic) NSString *potassium;
+@property (nonatomic) NSString *protein;
+@property (nonatomic) NSString *sat_fat;
 @property (nullable, nonatomic, retain) NSString *serving_size;
-@property (nonatomic) int16_t sodium;
-@property (nonatomic) int16_t sugar;
+@property (nonatomic) NSString *sodium;
+@property (nonatomic) NSString *sugar;
 @property (nonatomic) NSDate* timeStamp;
 @property (nullable, nonatomic, retain) NSString *title;
-@property (nonatomic) int16_t total_fat;
-@property (nonatomic) int16_t trans_fat;
-@property (nonatomic) int16_t vitamin_a;
-@property (nonatomic) int16_t vitamin_b;
-@property (nonatomic) int16_t vitamin_c;
+@property (nonatomic) NSString *total_fat;
+@property (nonatomic) NSString *trans_fat;
+@property (nonatomic) NSString *vitamin_a;
+@property (nonatomic) NSString *vitamin_b;
+@property (nonatomic) NSString *vitamin_c;
 @property (nullable, nonatomic, retain) NSManagedObject *date;
 
 @end

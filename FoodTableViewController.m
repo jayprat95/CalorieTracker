@@ -7,8 +7,6 @@
 //
 
 #import "FoodTableViewController.h"
-#import "NutritionViewController.h"
-#import "FoodsCell.h"
 
 @interface FoodTableViewController ()
 
@@ -21,6 +19,7 @@
     
     [self.tableView registerClass:[FoodsCell class] forCellReuseIdentifier:@"FoodCell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"CustomFoodCell" bundle:nil] forCellReuseIdentifier:@"FoodCell"];
+    self.dishList = [Parser parseFile:@"westend"];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -44,16 +43,10 @@
         cell = [[[NSBundle mainBundle]loadNibNamed:@"CustomFoodCell" owner:self options:nil]objectAtIndex:0];
     }
     
-    // Static dining halls
-    NSArray *dummyFoods = @[@"Cheese Pizza", @"Peppearoni Pizza", @"Strawberry Ice Cream", @"Orange Juice", @"Apple Juice", @"Chocolate Milk", @"Sandwich", @"Crackers", @"California Roll", @"Spicy Tuna Roll"];
-    
-    NSArray *dummyCals = @[@"500", @"600", @"400", @"200", @"240", @"320", @"790", @"150", @"220", @"360"];
-    
     // Configure the cell...
-//    cell.textLabel.text = @"WHY";
-//    cell.FoodNameLabel.text = @"TEST";
-    cell.FoodNameLabel.text = (@"%@", dummyFoods[indexPath.row]);
-    cell.CalLabel.text = (@"%@", dummyCals[indexPath.row]);
+    cell.FoodNameLabel.text = ((Dish *) self.dishList[indexPath.row]).title;
+    cell.CalLabel.text = ((Dish *) self.dishList[indexPath.row]).calories;
+    
     return cell;
 }
 
@@ -68,7 +61,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return [self.dishList count];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -79,7 +72,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 70;
+    return 90;
 }
 
 //- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

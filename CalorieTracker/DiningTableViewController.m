@@ -7,7 +7,7 @@
 //
 
 #import "DiningTableViewController.h"
-#import "FoodTableViewController.h"
+
 @import UIKit;
 @import Foundation;
 
@@ -16,6 +16,8 @@
 @end
 
 @implementation DiningTableViewController
+
+NSMutableArray *arr;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -63,15 +65,15 @@
     return @"Dining Halls";
 }
 
-//
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    NSLog(@"Running");
-//    if ([segue.identifier isEqualToString:@"DiningToFoods"]) {
-////        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-////        FoodTableViewController *destViewController = (FoodTableViewController *) segue.destinationViewController;
-////        destViewController.recipeName = [recipes objectAtIndex:indexPath.row];
-//    }
-//}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"Running");
+    if ([segue.identifier isEqualToString:@"DiningToFoods"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        FoodTableViewController *c = ((FoodTableViewController *) segue.destinationViewController);
+        // TODO c.dishList = arr;
+    }
+}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
