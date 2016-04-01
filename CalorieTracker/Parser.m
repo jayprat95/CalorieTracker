@@ -59,6 +59,7 @@
         int shift = count - 1;
         
         dish.serving_size = foods[2 + shift];
+        dish.calories = foods[3 + shift];
         dish.total_fat = foods[4 + shift];
         dish.sat_fat = foods[5 + shift];
         dish.trans_fat = foods[6 + shift];

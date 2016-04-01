@@ -28,7 +28,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    // Set values
+//    NameLabel.text = self.dish.title;
 }
 
 - (void)didReceiveMemoryWarning {

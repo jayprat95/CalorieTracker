@@ -7,6 +7,7 @@
 //
 
 #import "FoodTableViewController.h"
+#import "NutritionViewController.h"
 
 @interface FoodTableViewController ()
 
@@ -73,6 +74,16 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 90;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"Running");
+    if ([segue.identifier isEqualToString:@"FoodsToNutrition"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NutritionViewController *c = ((NutritionViewController *) segue.destinationViewController);
+        c.dish = self.dishList[indexPath.row];
+        // TODO c.dishList = arr;
+    }
 }
 
 //- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

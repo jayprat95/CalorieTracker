@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Dish.h"
 
 @interface NutritionViewController : UIViewController
+
+@property Dish *dish;
 
 @end
