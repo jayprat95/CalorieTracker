@@ -11,11 +11,13 @@
 #import <Canvas.h>
 #import "UIColor+BFPaperColors.h"
 #import "AppDelegate.h"
+#import "BROptionsButton.h"
 
+static NSString * const kUserID = @"user_id";
 
-
-@interface TPTabBarController ()
-
+@interface TPTabBarController ()<BROptionButtonDelegate>
+@property (nonatomic, assign) BOOL visible;
+@property (nonatomic, strong) BROptionsButton *brOptionsButton;
 @end
 
 @implementation TPTabBarController
@@ -30,14 +32,23 @@
     AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     self.managedObjectContext = delegate.managedObjectContext;
     
-    [self addCenterButtonWithImage:[UIImage imageNamed:@"hood.png"] highlightImage:[UIImage imageNamed:@"hood-selected.png"] target:self action:@selector(buttonPressed:)];
-    [[UITabBar appearance] setTintColor:[UIColor paperColorRed]];
+//    [self addCenterButtonWithImage:[UIImage imageNamed:@"hood.png"] highlightImage:[UIImage imageNamed:@"hood-selected.png"] target:self action:@selector(buttonPressed:)];
+//    [[UITabBar appearance] setTintColor:[UIColor paperColorRed]];
+//    
+    // Do any additional setup after loading the view.
+    BROptionsButton *brOption = [[BROptionsButton alloc] initWithTabBar:self.tabBar forItemIndex:0 delegate:self];
+    [brOption setImage:[UIImage imageNamed:@"Up-50.png"] forBROptionsButtonState:BROptionsButtonStateNormal];
+    [brOption setImage:[UIImage imageNamed:@"x-mark.png"] forBROptionsButtonState:BROptionsButtonStateClosed];
+    self.brOptionsButton = brOption;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
 
 
 // Create a custom UIButton and add it to the center of our tab bar
@@ -68,15 +79,10 @@
 
 
 
-- (void)buttonPressed:(id)sender
-{
-
-}
-
 
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
 {
-
+    NSLog(@"FOOOOO");
 }
 
 - (BOOL)tabBarHidden {
@@ -88,6 +94,66 @@
     self.centerButton.hidden = tabBarHidden;
     self.tabBar.hidden = tabBarHidden;
 }
+
+
+
+
+#pragma broptions
+
+#pragma mark - BROptionsButtonState
+
+- (NSInteger)brOptionsButtonNumberOfItems:(BROptionsButton *)brOptionsButton {
+    return 2;
+}
+
+- (UIImage*)brOptionsButton:(BROptionsButton *)brOptionsButton imageForItemAtIndex:(NSInteger)index {
+    UIImage *image = [UIImage imageNamed:@"Apple"];
+    return image;
+}
+
+- (NSString*)brOptionsButton:(BROptionsButton *)brOptionsButton titleForItemAtIndex:(NSInteger)index {
+    
+    NSLog(@"This is the number: %lu", index);
+    
+    if(index == 0) {
+        return @"Dining Hall";
+    }
+    else if (index == 1) {
+        return @"Recommend";
+    }
+    else {
+        return @"";
+    }
+}
+
+- (void)brOptionsButton:(BROptionsButton *)brOptionsButton didSelectItem:(BROptionItem *)item {
+    NSLog(@"This is the number: %lu", item.index);
+    
+    if(item.index == 0) {
+        
+        ////switch to dining hall
+        
+    }
+    else if (item.index == 1) {
+        
+        ////switch to recommend
+        
+    }
+    [self setSelectedIndex:brOptionsButton.locationIndexInTabBar];
+}
+
+#pragma mark - CommonDelegate
+
+- (void)changeBROptionsButtonLocaitonTo:(NSInteger)location animated:(BOOL)animated {
+    if(location < self.tabBar.items.count) {
+        [self.brOptionsButton setLocationIndexInTabBar:location animated:YES];
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"" message:@"wrong index" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [alert show];
+    }
+}
+
+
 
 /*
 #pragma mark - Navigation
