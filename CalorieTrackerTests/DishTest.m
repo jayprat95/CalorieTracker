@@ -62,7 +62,7 @@
     Dish *newDish = [NSEntityDescription insertNewObjectForEntityForName:@"Dish" inManagedObjectContext:self.moc];
     newDish.title = @"Tomato";
     newDish.timeStamp = [NSDate date];
-    newDish.calories = 200;
+    newDish.calories = @"200";
     
     // Save the context.
     NSError *error = nil;
@@ -79,9 +79,7 @@
     NSArray *dishes = [self.moc executeFetchRequest:fetchRequest error:&error];
     Dish *dish2 = dishes[0];
     XCTAssertEqual(@"Tomato", dish2.title, @"Should be the same title");
-    XCTAssertEqual(200, dish2.calories, @"Should be the same amount of calories");
-    
-    
+    XCTAssert([@"200" isEqual: dish2.calories], @"Should be same");
 }
 
 - (void)testDeletingCoreDataObject {
@@ -90,7 +88,7 @@
     Dish *newDish = [NSEntityDescription insertNewObjectForEntityForName:@"Dish" inManagedObjectContext:self.moc];
     newDish.title = @"Tomato";
     newDish.timeStamp = [NSDate date];
-    newDish.calories = 200;
+    newDish.calories = @"200";
     
     // Save the context.
     NSError *error = nil;

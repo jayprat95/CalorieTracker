@@ -7,8 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		271DEBC51CC019C7005ED77B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271DEBC41CC019C7005ED77B /* Main.storyboard */; };
+		271DEBC81CC01B9E005ED77B /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 271DEBC71CC01B9E005ED77B /* HomeViewController.m */; };
+		271DEBCA1CC0272D005ED77B /* CustomNav.xib in Resources */ = {isa = PBXBuildFile; fileRef = 271DEBC91CC0272D005ED77B /* CustomNav.xib */; };
+		271DEBD01CC02A53005ED77B /* Navigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 271DEBCF1CC02A53005ED77B /* Navigation.m */; };
+		271DEBD21CC049DC005ED77B /* Recommend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271DEBD11CC049DC005ED77B /* Recommend.storyboard */; };
+		271DEBD41CC04D15005ED77B /* UserProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271DEBD31CC04D15005ED77B /* UserProfile.storyboard */; };
+		271DEBD61CC04DDB005ED77B /* genericGraph.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 271DEBD51CC04DDB005ED77B /* genericGraph.jpeg */; };
+		271DEBD91CC04F0D005ED77B /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 271DEBD81CC04F0D005ED77B /* RecommendViewController.m */; };
+		271DEBDC1CC04FAA005ED77B /* UserProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 271DEBDB1CC04FAA005ED77B /* UserProfileViewController.m */; };
+		271DEBDF1CC0A7F3005ED77B /* FoodTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 271DEBDE1CC0A7F3005ED77B /* FoodTableViewController.m */; };
+		271DEBF51CC0ADA3005ED77B /* Burger_37.csv in Resources */ = {isa = PBXBuildFile; fileRef = 271DEBEE1CC0ADA3005ED77B /* Burger_37.csv */; };
+		271DEBF61CC0ADA3005ED77B /* D2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 271DEBEF1CC0ADA3005ED77B /* D2.csv */; };
+		271DEBF71CC0ADA3005ED77B /* Deets.csv in Resources */ = {isa = PBXBuildFile; fileRef = 271DEBF01CC0ADA3005ED77B /* Deets.csv */; };
+		271DEBF81CC0ADA3005ED77B /* Dxpress.csv in Resources */ = {isa = PBXBuildFile; fileRef = 271DEBF11CC0ADA3005ED77B /* Dxpress.csv */; };
+		271DEBF91CC0ADA3005ED77B /* Owens.csv in Resources */ = {isa = PBXBuildFile; fileRef = 271DEBF21CC0ADA3005ED77B /* Owens.csv */; };
+		271DEBFA1CC0ADA3005ED77B /* Turner.csv in Resources */ = {isa = PBXBuildFile; fileRef = 271DEBF31CC0ADA3005ED77B /* Turner.csv */; };
+		271DEBFB1CC0ADA3005ED77B /* Vet_Cafe.csv in Resources */ = {isa = PBXBuildFile; fileRef = 271DEBF41CC0ADA3005ED77B /* Vet_Cafe.csv */; };
+		271DEC001CC0BED5005ED77B /* AssesmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 271DEBFF1CC0BED5005ED77B /* AssesmentViewController.m */; };
+		271DEC071CC1348B005ED77B /* DownPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC041CC1348B005ED77B /* DownPicker.m */; };
+		271DEC081CC1348B005ED77B /* UIDownPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC061CC1348B005ED77B /* UIDownPicker.m */; };
+		2741ABFC1CA438110006D035 /* CustomFoodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2741ABFB1CA438110006D035 /* CustomFoodCell.xib */; };
+		2741ABFF1CA439C20006D035 /* FoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2741ABFE1CA439C20006D035 /* FoodsCell.m */; };
+		2760BA811CA34F430022B05E /* NutritionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2760BA801CA34F430022B05E /* NutritionViewController.m */; };
+		27A01E3F1CA4A9AC00764D4D /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A01E3E1CA4A9AC00764D4D /* Parser.m */; };
+		27A01E431CA4B2D400764D4D /* westend.csv in Resources */ = {isa = PBXBuildFile; fileRef = 27A01E421CA4B2D400764D4D /* westend.csv */; };
 		84886E601C80D7B3002C1683 /* DateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84886E5F1C80D7B3002C1683 /* DateTest.m */; };
 		84886E621C80D7D6002C1683 /* UserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84886E611C80D7D6002C1683 /* UserTest.m */; };
+		84E6D7E11C9F5C8D00C9DC09 /* DiningTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E6D7E01C9F5C8D00C9DC09 /* DiningTableViewController.m */; };
 		E4E85C5BDB83F947AE49C8AC /* libPods-CalorieTracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C59E28CF4E2D5542621A38D /* libPods-CalorieTracker.a */; };
 		F6064E781CB410D0004F02D8 /* BROptionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F6064E771CB410D0004F02D8 /* BROptionItem.m */; };
 		F6272A901CA431EE00A5AA54 /* TPTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6272A8F1CA431EE00A5AA54 /* TPTabBarController.m */; };
@@ -23,10 +49,9 @@
 		F6BFB86E1C651F720056C268 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BFB86D1C651F720056C268 /* main.m */; };
 		F6BFB8711C651F720056C268 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BFB8701C651F720056C268 /* AppDelegate.m */; };
 		F6BFB8741C651F720056C268 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BFB8731C651F720056C268 /* ViewController.m */; };
-		F6BFB8771C651F720056C268 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6BFB8751C651F720056C268 /* Main.storyboard */; };
+		F6BFB8771C651F720056C268 /* Dining.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6BFB8751C651F720056C268 /* Dining.storyboard */; };
 		F6BFB87A1C651F720056C268 /* CalorieTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6BFB8781C651F720056C268 /* CalorieTracker.xcdatamodeld */; };
 		F6BFB87C1C651F720056C268 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6BFB87B1C651F720056C268 /* Assets.xcassets */; };
-		F6BFB87F1C651F720056C268 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6BFB87D1C651F720056C268 /* LaunchScreen.storyboard */; };
 		F6BFB88A1C651F730056C268 /* CalorieTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BFB8891C651F730056C268 /* CalorieTrackerTests.m */; };
 		F6BFB8951C651F730056C268 /* CalorieTrackerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BFB8941C651F730056C268 /* CalorieTrackerUITests.m */; };
 		F6D6FD9E1CB48A4000883CD6 /* BROptionsButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D6FD9D1CB48A4000883CD6 /* BROptionsButton.m */; };
@@ -50,9 +75,47 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		271DEBC41CC019C7005ED77B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		271DEBC61CC01B9E005ED77B /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		271DEBC71CC01B9E005ED77B /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		271DEBC91CC0272D005ED77B /* CustomNav.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomNav.xib; sourceTree = "<group>"; };
+		271DEBCE1CC02A53005ED77B /* Navigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Navigation.h; sourceTree = "<group>"; };
+		271DEBCF1CC02A53005ED77B /* Navigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Navigation.m; sourceTree = "<group>"; };
+		271DEBD11CC049DC005ED77B /* Recommend.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Recommend.storyboard; sourceTree = "<group>"; };
+		271DEBD31CC04D15005ED77B /* UserProfile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserProfile.storyboard; sourceTree = "<group>"; };
+		271DEBD51CC04DDB005ED77B /* genericGraph.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = genericGraph.jpeg; sourceTree = "<group>"; };
+		271DEBD71CC04F0D005ED77B /* RecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendViewController.h; sourceTree = "<group>"; };
+		271DEBD81CC04F0D005ED77B /* RecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendViewController.m; sourceTree = "<group>"; };
+		271DEBDA1CC04FAA005ED77B /* UserProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProfileViewController.h; sourceTree = "<group>"; };
+		271DEBDB1CC04FAA005ED77B /* UserProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfileViewController.m; sourceTree = "<group>"; };
+		271DEBDD1CC0A7F3005ED77B /* FoodTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodTableViewController.h; sourceTree = "<group>"; };
+		271DEBDE1CC0A7F3005ED77B /* FoodTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodTableViewController.m; sourceTree = "<group>"; };
+		271DEBEE1CC0ADA3005ED77B /* Burger_37.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Burger_37.csv; sourceTree = "<group>"; };
+		271DEBEF1CC0ADA3005ED77B /* D2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = D2.csv; sourceTree = "<group>"; };
+		271DEBF01CC0ADA3005ED77B /* Deets.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Deets.csv; sourceTree = "<group>"; };
+		271DEBF11CC0ADA3005ED77B /* Dxpress.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dxpress.csv; sourceTree = "<group>"; };
+		271DEBF21CC0ADA3005ED77B /* Owens.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Owens.csv; sourceTree = "<group>"; };
+		271DEBF31CC0ADA3005ED77B /* Turner.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Turner.csv; sourceTree = "<group>"; };
+		271DEBF41CC0ADA3005ED77B /* Vet_Cafe.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vet_Cafe.csv; sourceTree = "<group>"; };
+		271DEBFE1CC0BED5005ED77B /* AssesmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssesmentViewController.h; sourceTree = "<group>"; };
+		271DEBFF1CC0BED5005ED77B /* AssesmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssesmentViewController.m; sourceTree = "<group>"; };
+		271DEC031CC1348B005ED77B /* DownPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownPicker.h; sourceTree = "<group>"; };
+		271DEC041CC1348B005ED77B /* DownPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownPicker.m; sourceTree = "<group>"; };
+		271DEC051CC1348B005ED77B /* UIDownPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDownPicker.h; sourceTree = "<group>"; };
+		271DEC061CC1348B005ED77B /* UIDownPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDownPicker.m; sourceTree = "<group>"; };
+		2741ABFB1CA438110006D035 /* CustomFoodCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomFoodCell.xib; sourceTree = "<group>"; };
+		2741ABFD1CA439C20006D035 /* FoodsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodsCell.h; sourceTree = "<group>"; };
+		2741ABFE1CA439C20006D035 /* FoodsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodsCell.m; sourceTree = "<group>"; };
+		2760BA7F1CA34F430022B05E /* NutritionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NutritionViewController.h; sourceTree = "<group>"; };
+		2760BA801CA34F430022B05E /* NutritionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NutritionViewController.m; sourceTree = "<group>"; };
+		27A01E3D1CA4A9AC00764D4D /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
+		27A01E3E1CA4A9AC00764D4D /* Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parser.m; sourceTree = "<group>"; };
+		27A01E421CA4B2D400764D4D /* westend.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = westend.csv; sourceTree = "<group>"; };
 		4310C0EE1C47F7C95922C411 /* Pods-CalorieTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalorieTracker/Pods-CalorieTracker.release.xcconfig"; sourceTree = "<group>"; };
 		84886E5F1C80D7B3002C1683 /* DateTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTest.m; sourceTree = "<group>"; };
 		84886E611C80D7D6002C1683 /* UserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTest.m; sourceTree = "<group>"; };
+		84E6D7DF1C9F5C8D00C9DC09 /* DiningTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiningTableViewController.h; sourceTree = "<group>"; };
+		84E6D7E01C9F5C8D00C9DC09 /* DiningTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiningTableViewController.m; sourceTree = "<group>"; };
 		8D11EDB550C48A2D33855C77 /* Pods-CalorieTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalorieTracker/Pods-CalorieTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		9C59E28CF4E2D5542621A38D /* libPods-CalorieTracker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CalorieTracker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6064E761CB410D0004F02D8 /* BROptionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BROptionItem.h; sourceTree = "<group>"; };
@@ -79,10 +142,9 @@
 		F6BFB8701C651F720056C268 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F6BFB8721C651F720056C268 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F6BFB8731C651F720056C268 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F6BFB8761C651F720056C268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F6BFB8761C651F720056C268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Dining.storyboard; sourceTree = "<group>"; };
 		F6BFB8791C651F720056C268 /* CalorieTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CalorieTracker.xcdatamodel; sourceTree = "<group>"; };
 		F6BFB87B1C651F720056C268 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F6BFB87E1C651F720056C268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6BFB8801C651F720056C268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6BFB8851C651F730056C268 /* CalorieTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalorieTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6BFB8891C651F730056C268 /* CalorieTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalorieTrackerTests.m; sourceTree = "<group>"; };
@@ -161,6 +223,14 @@
 		F6BFB8601C651F720056C268 = {
 			isa = PBXGroup;
 			children = (
+				271DEBEE1CC0ADA3005ED77B /* Burger_37.csv */,
+				271DEBEF1CC0ADA3005ED77B /* D2.csv */,
+				271DEBF01CC0ADA3005ED77B /* Deets.csv */,
+				271DEBF11CC0ADA3005ED77B /* Dxpress.csv */,
+				271DEBF21CC0ADA3005ED77B /* Owens.csv */,
+				271DEBF31CC0ADA3005ED77B /* Turner.csv */,
+				271DEBF41CC0ADA3005ED77B /* Vet_Cafe.csv */,
+				27A01E421CA4B2D400764D4D /* westend.csv */,
 				F6BFB86B1C651F720056C268 /* CalorieTracker */,
 				F6BFB8881C651F730056C268 /* CalorieTrackerTests */,
 				F6BFB8931C651F730056C268 /* CalorieTrackerUITests */,
@@ -183,8 +253,34 @@
 		F6BFB86B1C651F720056C268 /* CalorieTracker */ = {
 			isa = PBXGroup;
 			children = (
+				271DEBFE1CC0BED5005ED77B /* AssesmentViewController.h */,
+				271DEBFF1CC0BED5005ED77B /* AssesmentViewController.m */,
+				271DEC031CC1348B005ED77B /* DownPicker.h */,
+				271DEC041CC1348B005ED77B /* DownPicker.m */,
+				271DEC051CC1348B005ED77B /* UIDownPicker.h */,
+				271DEC061CC1348B005ED77B /* UIDownPicker.m */,
+				2741ABFB1CA438110006D035 /* CustomFoodCell.xib */,
+				271DEBC91CC0272D005ED77B /* CustomNav.xib */,
+				2741ABFD1CA439C20006D035 /* FoodsCell.h */,
+				2741ABFE1CA439C20006D035 /* FoodsCell.m */,
+				271DEBCE1CC02A53005ED77B /* Navigation.h */,
+				271DEBCF1CC02A53005ED77B /* Navigation.m */,
+				271DEBDD1CC0A7F3005ED77B /* FoodTableViewController.h */,
+				271DEBDE1CC0A7F3005ED77B /* FoodTableViewController.m */,
+				84E6D7DF1C9F5C8D00C9DC09 /* DiningTableViewController.h */,
+				84E6D7E01C9F5C8D00C9DC09 /* DiningTableViewController.m */,
+				2760BA7F1CA34F430022B05E /* NutritionViewController.h */,
+				2760BA801CA34F430022B05E /* NutritionViewController.m */,
+				271DEBC61CC01B9E005ED77B /* HomeViewController.h */,
+				271DEBC71CC01B9E005ED77B /* HomeViewController.m */,
 				F6BFB86F1C651F720056C268 /* AppDelegate.h */,
 				F6BFB8701C651F720056C268 /* AppDelegate.m */,
+				27A01E3D1CA4A9AC00764D4D /* Parser.h */,
+				27A01E3E1CA4A9AC00764D4D /* Parser.m */,
+				271DEBDA1CC04FAA005ED77B /* UserProfileViewController.h */,
+				271DEBDB1CC04FAA005ED77B /* UserProfileViewController.m */,
+				271DEBD71CC04F0D005ED77B /* RecommendViewController.h */,
+				271DEBD81CC04F0D005ED77B /* RecommendViewController.m */,
 				F6BFB8721C651F720056C268 /* ViewController.h */,
 				F6BFB8731C651F720056C268 /* ViewController.m */,
 				F6BFB8751C651F720056C268 /* Main.storyboard */,
@@ -194,8 +290,12 @@
 				F6D6FD9D1CB48A4000883CD6 /* BROptionsButton.m */,
 				F6064E761CB410D0004F02D8 /* BROptionItem.h */,
 				F6064E771CB410D0004F02D8 /* BROptionItem.m */,
+				F6BFB8751C651F720056C268 /* Dining.storyboard */,
+				271DEBC41CC019C7005ED77B /* Main.storyboard */,
+				271DEBD51CC04DDB005ED77B /* genericGraph.jpeg */,
+				271DEBD31CC04D15005ED77B /* UserProfile.storyboard */,
+				271DEBD11CC049DC005ED77B /* Recommend.storyboard */,
 				F6BFB87B1C651F720056C268 /* Assets.xcassets */,
-				F6BFB87D1C651F720056C268 /* LaunchScreen.storyboard */,
 				F6BFB8801C651F720056C268 /* Info.plist */,
 				F6BFB8781C651F720056C268 /* CalorieTracker.xcdatamodeld */,
 				F652C46A1C7E2496003980C4 /* basic_objects */,
@@ -339,9 +439,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6BFB87F1C651F720056C268 /* LaunchScreen.storyboard in Resources */,
 				F6BFB87C1C651F720056C268 /* Assets.xcassets in Resources */,
-				F6BFB8771C651F720056C268 /* Main.storyboard in Resources */,
+				27A01E431CA4B2D400764D4D /* westend.csv in Resources */,
+				271DEBD61CC04DDB005ED77B /* genericGraph.jpeg in Resources */,
+				271DEBFB1CC0ADA3005ED77B /* Vet_Cafe.csv in Resources */,
+				271DEBCA1CC0272D005ED77B /* CustomNav.xib in Resources */,
+				271DEBC51CC019C7005ED77B /* Main.storyboard in Resources */,
+				2741ABFC1CA438110006D035 /* CustomFoodCell.xib in Resources */,
+				271DEBD41CC04D15005ED77B /* UserProfile.storyboard in Resources */,
+				271DEBD21CC049DC005ED77B /* Recommend.storyboard in Resources */,
+				271DEBF81CC0ADA3005ED77B /* Dxpress.csv in Resources */,
+				271DEBF91CC0ADA3005ED77B /* Owens.csv in Resources */,
+				271DEBFA1CC0ADA3005ED77B /* Turner.csv in Resources */,
+				271DEBF71CC0ADA3005ED77B /* Deets.csv in Resources */,
+				271DEBF61CC0ADA3005ED77B /* D2.csv in Resources */,
+				F6BFB8771C651F720056C268 /* Dining.storyboard in Resources */,
+				271DEBF51CC0ADA3005ED77B /* Burger_37.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,17 +529,29 @@
 			files = (
 				F6272A901CA431EE00A5AA54 /* TPTabBarController.m in Sources */,
 				F6064E781CB410D0004F02D8 /* BROptionItem.m in Sources */,
+				2741ABFF1CA439C20006D035 /* FoodsCell.m in Sources */,
+				271DEBD01CC02A53005ED77B /* Navigation.m in Sources */,
+				2760BA811CA34F430022B05E /* NutritionViewController.m in Sources */,
+				271DEC071CC1348B005ED77B /* DownPicker.m in Sources */,
 				F652C45C1C7E240D003980C4 /* User+CoreDataProperties.m in Sources */,
 				F6D6FD9E1CB48A4000883CD6 /* BROptionsButton.m in Sources */,
 				F652C4631C7E2439003980C4 /* Dish.m in Sources */,
+				27A01E3F1CA4A9AC00764D4D /* Parser.m in Sources */,
+				271DEC081CC1348B005ED77B /* UIDownPicker.m in Sources */,
+				271DEBDF1CC0A7F3005ED77B /* FoodTableViewController.m in Sources */,
 				F6BFB8741C651F720056C268 /* ViewController.m in Sources */,
+				271DEBDC1CC04FAA005ED77B /* UserProfileViewController.m in Sources */,
+				271DEBC81CC01B9E005ED77B /* HomeViewController.m in Sources */,
 				F652C45D1C7E240D003980C4 /* User.m in Sources */,
 				F6BFB8711C651F720056C268 /* AppDelegate.m in Sources */,
+				84E6D7E11C9F5C8D00C9DC09 /* DiningTableViewController.m in Sources */,
 				F652C4691C7E2481003980C4 /* Date.m in Sources */,
 				F652C4681C7E2481003980C4 /* Date+CoreDataProperties.m in Sources */,
 				F6BFB87A1C651F720056C268 /* CalorieTracker.xcdatamodeld in Sources */,
 				F652C4621C7E2439003980C4 /* Dish+CoreDataProperties.m in Sources */,
 				F6BFB86E1C651F720056C268 /* main.m in Sources */,
+				271DEC001CC0BED5005ED77B /* AssesmentViewController.m in Sources */,
+				271DEBD91CC04F0D005ED77B /* RecommendViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,20 +590,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F6BFB8751C651F720056C268 /* Main.storyboard */ = {
+		F6BFB8751C651F720056C268 /* Dining.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F6BFB8761C651F720056C268 /* Base */,
 			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F6BFB87D1C651F720056C268 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F6BFB87E1C651F720056C268 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
+			name = Dining.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

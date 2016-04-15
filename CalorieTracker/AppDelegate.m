@@ -16,7 +16,22 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
     // Override point for customization after application launch.
+    // check if completed the assesment, so save assesment boolean to ios device and load it
+    
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    BOOL assesment = [prefs boolForKey:@"assesment"];
+    
+    NSString *storyboardId = assesment ? @"mainStoryBoardID" : @"assesmentID";
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *initViewController = [storyboard instantiateViewControllerWithIdentifier:storyboardId];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = initViewController;
+    [self.window makeKeyAndVisible];
+
+    
     return YES;
 }
 
