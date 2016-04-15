@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FoodTableViewController.h"
 #import "Parser.h"
 #import "AppDelegate.h"
 

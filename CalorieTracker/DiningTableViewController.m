@@ -5,8 +5,9 @@
 //  Created by Julia on 3/20/16.
 //  Copyright © 2016 TouchTap. All rights reserved.
 //
-
+#import "Navigation.h"
 #import "DiningTableViewController.h"
+#import "FoodTableViewController.h"
 
 @import UIKit;
 @import Foundation;
@@ -17,10 +18,15 @@
 
 @implementation DiningTableViewController
 
-NSMutableArray *arr;
+int idxPath;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    Navigation *nav = [[Navigation alloc]initWithViewController: self];
+    nav = [[[NSBundle mainBundle] loadNibNamed:@"CustomNav" owner:self options:nil] objectAtIndex:0];
+    
+//    [self.stackView addArrangedSubview:nav];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -52,12 +58,12 @@ NSMutableArray *arr;
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"LabelCell"];
     }
-    
+
     // Static dining halls
-    NSArray *diningHalls = @[@"Au Bon Pain", @"D2", @"Deets", @"DXpress", @"Hokie Grill", @"Owens", @"Turner", @"West End"];
-    
+    NSArray *diningHalls = @[@"Au Bon Pain", @"Burger 37", @"D2", @"Deets", @"DXpress", @"Hokie Grill", @"Owens", @"Turner", @"West End"];
+
     // Configure the cell...
-    cell.textLabel.text = (@"%@", diningHalls[indexPath.row]);
+    cell.textLabel.text = diningHalls[indexPath.row];
     return cell;
 }
 
@@ -71,12 +77,44 @@ NSMutableArray *arr;
     if ([segue.identifier isEqualToString:@"DiningToFoods"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         FoodTableViewController *c = ((FoodTableViewController *) segue.destinationViewController);
-        // TODO c.dishList = arr;
+        
+        NSMutableArray *arr;
+        
+        switch (idxPath)
+        {
+            case 0:
+                arr = [Parser parseFile:@"abp"];
+                break;
+            case 1:
+                arr = [Parser parseFile:@"Burger_37"];
+                break;
+            case 2:
+                arr = [Parser parseFile:@"westend"];
+                break;
+            case 3:
+                arr = [Parser parseFile:@"westend"];
+                break;
+            case 4:
+                arr = [Parser parseFile:@"westend"];
+                break;
+            case 5:
+                arr = [Parser parseFile:@"westend"];
+                break;
+            case 6:
+                arr = [Parser parseFile:@"westend"];
+                break;
+            case 7:
+                arr = [Parser parseFile:@"westend"];
+                break;
+        }
+        
+        [c setDishList:arr];
     }
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    idxPath = indexPath.row;
     [self performSegueWithIdentifier:@("DiningToFoods") sender:self];
 }
 

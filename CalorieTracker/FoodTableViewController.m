@@ -2,11 +2,12 @@
 //  FoodTableViewController.m
 //  CalorieTracker
 //
-//  Created by Amin Davoodi on 3/18/16.
+//  Created by Amin Davoodi on 3/23/16.
 //  Copyright © 2016 TouchTap. All rights reserved.
 //
 
 #import "FoodTableViewController.h"
+#import "NutritionViewController.h"
 
 @interface FoodTableViewController ()
 
@@ -17,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.tableView registerClass:[FoodsCell class] forCellReuseIdentifier:@"FoodCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"CustomFoodCell" bundle:nil] forCellReuseIdentifier:@"FoodCell"];
+        
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -29,27 +33,66 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
-}
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    FoodsCell *cell = (FoodsCell *) [tableView dequeueReusableCellWithIdentifier: @"FoodCell"forIndexPath:indexPath];
+    
+    // Check null
+    if (cell == nil)
+    {
+        cell = [[[NSBundle mainBundle]loadNibNamed:@"CustomFoodCell" owner:self options:nil]objectAtIndex:0];
+    }
     
     // Configure the cell...
+    cell.FoodNameLabel.text = ((Dish *) self.dishList[indexPath.row]).title;
+    cell.CalLabel.text = ((Dish *) self.dishList[indexPath.row]).calories;
     
     return cell;
 }
-*/
+
+- (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger) nameOfDiningHall {
+    return @"Turners";
+}
+
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.dishList count];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@("FoodsToNutrition") sender:self];
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 90;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"Running");
+    if ([segue.identifier isEqualToString:@"FoodsToNutrition"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NutritionViewController *c = ((NutritionViewController *) segue.destinationViewController);
+        c.dish = self.dishList[indexPath.row];
+        
+        
+        // TODO c.dishList = arr;
+    }
+}
+
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FoodLabelCell" forIndexPath:indexPath];
+//    
+//    return cell;
+//}
+
 
 /*
 // Override to support conditional editing of the table view.
