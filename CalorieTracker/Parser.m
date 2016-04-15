@@ -28,7 +28,7 @@
         i++;
         foods = [line componentsSeparatedByString:@","];
         
-        if ([foods[1] isEqual: @"food_name"])
+        if ([foods count] < 2 || [foods[1] isEqual: @"food_name"])
         {
             continue;
         }

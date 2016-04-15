@@ -47,7 +47,7 @@ int idxPath;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 8;
+    return 9;
 }
 
 
@@ -89,22 +89,28 @@ int idxPath;
                 arr = [Parser parseFile:@"Burger_37"];
                 break;
             case 2:
-                arr = [Parser parseFile:@"westend"];
+                arr = [Parser parseFile:@"D2"];
                 break;
             case 3:
-                arr = [Parser parseFile:@"westend"];
+                arr = [Parser parseFile:@"Deets"];
                 break;
             case 4:
-                arr = [Parser parseFile:@"westend"];
+                arr = [Parser parseFile:@"Dxpress"];
                 break;
             case 5:
-                arr = [Parser parseFile:@"westend"];
+                arr = [Parser parseFile:@"hokieGrill"];
                 break;
             case 6:
-                arr = [Parser parseFile:@"westend"];
+                arr = [Parser parseFile:@"Owens"];
                 break;
             case 7:
+                arr = [Parser parseFile:@"Turner"];
+                break;
+            case 8:
                 arr = [Parser parseFile:@"westend"];
+                break;
+            default:
+                NSLog(@"Bad index path");
                 break;
         }
         

@@ -24,6 +24,9 @@
 		271DEBF91CC0ADA3005ED77B /* Owens.csv in Resources */ = {isa = PBXBuildFile; fileRef = 271DEBF21CC0ADA3005ED77B /* Owens.csv */; };
 		271DEBFA1CC0ADA3005ED77B /* Turner.csv in Resources */ = {isa = PBXBuildFile; fileRef = 271DEBF31CC0ADA3005ED77B /* Turner.csv */; };
 		271DEBFB1CC0ADA3005ED77B /* Vet_Cafe.csv in Resources */ = {isa = PBXBuildFile; fileRef = 271DEBF41CC0ADA3005ED77B /* Vet_Cafe.csv */; };
+		271DEC001CC0BED5005ED77B /* AssesmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 271DEBFF1CC0BED5005ED77B /* AssesmentViewController.m */; };
+		271DEC071CC1348B005ED77B /* DownPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC041CC1348B005ED77B /* DownPicker.m */; };
+		271DEC081CC1348B005ED77B /* UIDownPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC061CC1348B005ED77B /* UIDownPicker.m */; };
 		2741ABFC1CA438110006D035 /* CustomFoodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2741ABFB1CA438110006D035 /* CustomFoodCell.xib */; };
 		2741ABFF1CA439C20006D035 /* FoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2741ABFE1CA439C20006D035 /* FoodsCell.m */; };
 		2760BA811CA34F430022B05E /* NutritionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2760BA801CA34F430022B05E /* NutritionViewController.m */; };
@@ -91,6 +94,12 @@
 		271DEBF21CC0ADA3005ED77B /* Owens.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Owens.csv; sourceTree = "<group>"; };
 		271DEBF31CC0ADA3005ED77B /* Turner.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Turner.csv; sourceTree = "<group>"; };
 		271DEBF41CC0ADA3005ED77B /* Vet_Cafe.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vet_Cafe.csv; sourceTree = "<group>"; };
+		271DEBFE1CC0BED5005ED77B /* AssesmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssesmentViewController.h; sourceTree = "<group>"; };
+		271DEBFF1CC0BED5005ED77B /* AssesmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssesmentViewController.m; sourceTree = "<group>"; };
+		271DEC031CC1348B005ED77B /* DownPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownPicker.h; sourceTree = "<group>"; };
+		271DEC041CC1348B005ED77B /* DownPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownPicker.m; sourceTree = "<group>"; };
+		271DEC051CC1348B005ED77B /* UIDownPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDownPicker.h; sourceTree = "<group>"; };
+		271DEC061CC1348B005ED77B /* UIDownPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDownPicker.m; sourceTree = "<group>"; };
 		2741ABFB1CA438110006D035 /* CustomFoodCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomFoodCell.xib; sourceTree = "<group>"; };
 		2741ABFD1CA439C20006D035 /* FoodsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodsCell.h; sourceTree = "<group>"; };
 		2741ABFE1CA439C20006D035 /* FoodsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodsCell.m; sourceTree = "<group>"; };
@@ -235,12 +244,18 @@
 		F6BFB86B1C651F720056C268 /* CalorieTracker */ = {
 			isa = PBXGroup;
 			children = (
+				271DEBFE1CC0BED5005ED77B /* AssesmentViewController.h */,
+				271DEBFF1CC0BED5005ED77B /* AssesmentViewController.m */,
+				271DEC031CC1348B005ED77B /* DownPicker.h */,
+				271DEC041CC1348B005ED77B /* DownPicker.m */,
+				271DEC051CC1348B005ED77B /* UIDownPicker.h */,
+				271DEC061CC1348B005ED77B /* UIDownPicker.m */,
 				2741ABFB1CA438110006D035 /* CustomFoodCell.xib */,
+				271DEBC91CC0272D005ED77B /* CustomNav.xib */,
 				2741ABFD1CA439C20006D035 /* FoodsCell.h */,
 				2741ABFE1CA439C20006D035 /* FoodsCell.m */,
 				271DEBCE1CC02A53005ED77B /* Navigation.h */,
 				271DEBCF1CC02A53005ED77B /* Navigation.m */,
-				271DEBC91CC0272D005ED77B /* CustomNav.xib */,
 				271DEBDD1CC0A7F3005ED77B /* FoodTableViewController.h */,
 				271DEBDE1CC0A7F3005ED77B /* FoodTableViewController.m */,
 				84E6D7DF1C9F5C8D00C9DC09 /* DiningTableViewController.h */,
@@ -250,9 +265,9 @@
 				271DEBC61CC01B9E005ED77B /* HomeViewController.h */,
 				271DEBC71CC01B9E005ED77B /* HomeViewController.m */,
 				F6BFB86F1C651F720056C268 /* AppDelegate.h */,
+				F6BFB8701C651F720056C268 /* AppDelegate.m */,
 				27A01E3D1CA4A9AC00764D4D /* Parser.h */,
 				27A01E3E1CA4A9AC00764D4D /* Parser.m */,
-				F6BFB8701C651F720056C268 /* AppDelegate.m */,
 				271DEBDA1CC04FAA005ED77B /* UserProfileViewController.h */,
 				271DEBDB1CC04FAA005ED77B /* UserProfileViewController.m */,
 				271DEBD71CC04F0D005ED77B /* RecommendViewController.h */,
@@ -499,9 +514,11 @@
 				2741ABFF1CA439C20006D035 /* FoodsCell.m in Sources */,
 				271DEBD01CC02A53005ED77B /* Navigation.m in Sources */,
 				2760BA811CA34F430022B05E /* NutritionViewController.m in Sources */,
+				271DEC071CC1348B005ED77B /* DownPicker.m in Sources */,
 				F652C45C1C7E240D003980C4 /* User+CoreDataProperties.m in Sources */,
 				F652C4631C7E2439003980C4 /* Dish.m in Sources */,
 				27A01E3F1CA4A9AC00764D4D /* Parser.m in Sources */,
+				271DEC081CC1348B005ED77B /* UIDownPicker.m in Sources */,
 				271DEBDF1CC0A7F3005ED77B /* FoodTableViewController.m in Sources */,
 				F6BFB8741C651F720056C268 /* ViewController.m in Sources */,
 				271DEBDC1CC04FAA005ED77B /* UserProfileViewController.m in Sources */,
@@ -514,6 +531,7 @@
 				F6BFB87A1C651F720056C268 /* CalorieTracker.xcdatamodeld in Sources */,
 				F652C4621C7E2439003980C4 /* Dish+CoreDataProperties.m in Sources */,
 				F6BFB86E1C651F720056C268 /* main.m in Sources */,
+				271DEC001CC0BED5005ED77B /* AssesmentViewController.m in Sources */,
 				271DEBD91CC04F0D005ED77B /* RecommendViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
