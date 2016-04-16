@@ -21,6 +21,23 @@
     NSArray *foods;
     NSMutableArray *dishList = [[NSMutableArray alloc] init];
     
+    // Dictionary --------------------
+    
+    NSManagedObjectContext *context =  ((AppDelegate*)[[UIApplication sharedApplication] delegate]).managedObjectContext;
+    
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Dish" inManagedObjectContext:context];
+    
+    Dish *d = [[Dish alloc] initWithEntity:entity insertIntoManagedObjectContext:nil];
+    
+    NSMutableDictionary *allDishes = [NSMutableDictionary
+                                dictionaryWithDictionary:@{
+                                @"000000" : d,
+                                }];
+    
+    [allDishes setObject:d forKey:@"000001"];
+    
+    // ----- End dictionary ------------
+    
     int i = 0;
     
     for (NSString *line in lines)
@@ -70,6 +87,8 @@
         dish.sugar = foods[11 + shift];
         dish.calcium = foods[12 + shift];
         dish.iron = foods[13 + shift];
+        NSString *dishID = @"01010101";
+        dish.id = dishID;
         
         if (i == 1)
         {
@@ -77,6 +96,8 @@
         }
         
         [dishList addObject:dish];
+        [allDishes setObject:dish forKey:dishID];
+        
     }
     
     return dishList;

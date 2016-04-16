@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface User (CoreDataProperties)
 
 @property (nullable, nonatomic, retain) NSManagedObject *dates;
+@property (nullable, nonatomic, retain) NSMutableDictionary *allDishes;
 
 @end
 

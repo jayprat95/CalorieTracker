@@ -35,6 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSString *vitamin_a;
 @property (nonatomic) NSString *vitamin_b;
 @property (nonatomic) NSString *vitamin_c;
+@property (nonatomic) NSString *id;
 @property (nullable, nonatomic, retain) NSManagedObject *date;
 
 @end
