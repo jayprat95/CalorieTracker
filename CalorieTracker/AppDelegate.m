@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <AFNetworking/AFHTTPSessionManager.h>
 
 @interface AppDelegate ()
 
@@ -20,11 +21,54 @@
     // Override point for customization after application launch.
     // check if completed the assesment, so save assesment boolean to ios device and load it
     
+    NSURL * urlStr = [NSURL URLWithString:@"http://45.55.212.193/api/food/"];
+    
+     NSDictionary* sendDict = @{@"milk":@(0), @"wheat":@(0), @"soy":@(0), @"cheese":@(0), @"egg":@(0), @"beef":@(0), @"turkey":@(0), @"chicken":@(0), @"pork":@(0), @"peanuts":@(0), @"veggie":@(0), @"pizza":@(0), @"lamb":@(0), @"onion":@(0), @"tomato":@(0), @"cream":@(0), @"pepper":@(0), @"shellfish":@(0), @"gluten":@(0)};
+    
+    NSData *data = [NSJSONSerialization dataWithJSONObject:sendDict
+                                                   options:NSJSONWritingPrettyPrinted
+                                                     error:nil];
+    
+    
+    NSString *jsonStr = [[NSString alloc] initWithData:data
+                                              encoding:NSUTF8StringEncoding];
+    
+    NSArray *banList = [NSArray arrayWithObjects: nil];
+    
+    NSLog(@"TAG URL: %@", jsonStr);
+    
+    NSData * JSONData = [NSJSONSerialization dataWithJSONObject:banList
+                                                        options:kNilOptions
+                                                          error:nil];
+    
+    NSString *banJSONStr = [[NSString alloc] initWithData:JSONData
+                                              encoding:NSUTF8StringEncoding];
+    
+    NSLog(@"BAN URL: %@", banJSONStr);
+    
+    NSDictionary *dictParameters = @{@"calories": @500,@"dining": @1,@"tags":jsonStr,@"ban":banJSONStr};
+    
+    
+    
+    
+    AFHTTPSessionManager * manager = [AFHTTPSessionManager manager];
+    
+    
+    [manager GET:urlStr.absoluteString parameters:dictParameters success:^(NSURLSessionTask *task, id responseObject) {
+        NSLog(@"PLIST: %@", responseObject);
+        
+    } failure:^(NSURLSessionTask *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+        
+    }];
+    
+
+    
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     if ([prefs boolForKey:@"HMIsCreated"] == NO) {
         
         NSDictionary* dict = @{@"milk":@(0), @"milk":@(0), @"wheat":@(0), @"soy":@(0), @"cheese":@(0), @"egg":@(0), @"beef":@(0), @"turkey":@(0), @"chicken":@(0), @"pork":@(0), @"peanuts":@(0), @"veggie":@(0), @"pizza":@(0), @"lamb":@(0), @"onion":@(0), @"tomato":@(0), @"cream":@(0), @"pepper":@(0), @"shellfish":@(0), @"gluten":@(0)};
-        [prefs setObject:dict forKey:@"DictKey"];
+        [prefs setObject:dict forKey:@"Tags"];
         [prefs setBool:YES forKey:@"HMIsCreated"];
         
         
