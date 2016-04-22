@@ -9,7 +9,7 @@
 #import "Asses2ViewController.h"
 #import "AllergensTableView.h"
 
-@interface Asses2ViewController ()
+@interface Asses2ViewController () 
 
 @property (weak, nonatomic) IBOutlet AllergensTableView *allerginsTableView;
 
@@ -33,9 +33,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-//    
-//    self.allerginsTableView.delegate = self;
-//    self.allerginsTableView.dataSource = self;
+
+    self.allerginsTableView.delegate = self;
+    self.allerginsTableView.dataSource = self;
     // Do any additional setup after loading the view.
 }
 
@@ -46,12 +46,14 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+    NSLog(@"NUM SECS CALLED");
     return 1;
 }
 
 // number of row in the section, I assume there is only 1 row
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    NSLog(@"NUMROWS CALLEd");
     return [[[NSUserDefaults standardUserDefaults] dictionaryForKey:@"DictKey"] count];
 }
 
@@ -59,7 +61,6 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell;
-    NSLog(@"TEST");
 
     if (tableView == self.allerginsTableView)
     {

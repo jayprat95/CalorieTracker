@@ -8,7 +8,7 @@
 
 #import "RecommendViewController.h"
 #import "Navigation.h"
-
+#import "AFNetworking.h"
 
 @interface RecommendViewController ()
 @property (weak, nonatomic) IBOutlet UIStackView *stackView;
@@ -21,8 +21,55 @@
 @implementation RecommendViewController
 - (IBAction)updateRec:(id)sender
 {
-    NSLog(@"Recing");
+    NSURL * urlStr = [NSURL URLWithString:@"http://45.55.212.193/api/food/"];
     
+    NSDictionary* sendDict = [[NSUserDefaults standardUserDefaults] dictionaryForKey:@"DictKey"];
+    
+    NSData *data = [NSJSONSerialization dataWithJSONObject:sendDict
+                                                   options:NSJSONWritingPrettyPrinted
+                                                     error:nil];
+    
+    
+    NSString *jsonStr = [[NSString alloc] initWithData:data
+                                              encoding:NSUTF8StringEncoding];
+    
+    NSArray *banList = [NSArray arrayWithObjects:[[NSUserDefaults standardUserDefaults] dictionaryForKey:@"ban_list"]];
+    
+    NSLog(@"TAG URL: %@", jsonStr);
+    
+    NSData * JSONData = [NSJSONSerialization dataWithJSONObject:banList
+                                                        options:kNilOptions
+                                                          error:nil];
+    
+    NSString *banJSONStr = [[NSString alloc] initWithData:JSONData
+                                                 encoding:NSUTF8StringEncoding];
+    
+    NSLog(@"BAN URL: %@", banJSONStr);
+    
+    NSDictionary *dictParameters = @{@"calories": @500,@"dining": @1,@"tags":jsonStr,@"ban":banJSONStr};
+    
+    AFHTTPSessionManager * manager = [AFHTTPSessionManager manager];
+    
+    [manager GET:urlStr.absoluteString parameters:dictParameters success:^(NSURLSessionTask *task, id responseObject) {
+        NSLog(@"ACTUAL: %@", responseObject);
+        NSDictionary *recommended_foods = (NSDictionary*) responseObject;
+        
+        NSArray *actualIDS = [recommended_foods objectForKey:@"id"];
+        
+        for (NSString *s in actualIDS) {
+            NSLog(@"FOOD: %@", s);
+        }
+//        for (int i = 0; i < [recommended_foods count]; i++)
+//        {
+//            NSLog(@"%@", recommended)
+//        }
+//        
+//        NSLog(@"floats %@", recFloats);
+        
+    } failure:^(NSURLSessionTask *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+        
+    }];
 }
 - (IBAction)refreshRec:(id)sender
 {

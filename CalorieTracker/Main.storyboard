@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xpB-BY-Gcy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="czM-94-pma">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -110,7 +110,7 @@
             </objects>
             <point key="canvasLocation" x="94" y="397"/>
         </scene>
-        <!--Assesment View Controller-->
+        <!--Assesment-->
         <scene sceneID="h7h-xR-npy">
             <objects>
                 <viewController storyboardIdentifier="assesmentID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6wH-LC-QjH" customClass="AssesmentViewController" sceneMemberID="viewController">
@@ -122,8 +122,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="x2y-rH-CL8">
-                                <rect key="frame" x="20" y="40" width="560" height="496"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="x2y-rH-CL8">
+                                <rect key="frame" x="20" y="84" width="560" height="496"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome to the food recommender!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71A-dn-3Le">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="21"/>
@@ -235,7 +235,7 @@
                                         <state key="normal" title="Next"/>
                                         <connections>
                                             <action selector="assesmentDone:" destination="6wH-LC-QjH" eventType="touchUpInside" id="yQo-BX-KPf"/>
-                                            <segue destination="RFm-DS-S0j" kind="showDetail" identifier="AssessToAssessTwo" id="5nm-Xx-Irn"/>
+                                            <segue destination="nhP-5t-rnp" kind="show" id="ZzV-Sa-pZ2"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -249,7 +249,7 @@
                             <constraint firstItem="4wa-Xz-ZRd" firstAttribute="top" secondItem="x2y-rH-CL8" secondAttribute="bottom" constant="20" id="pCY-iH-YnB"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ord-db-qM0"/>
+                    <navigationItem key="navigationItem" title="Assesment" id="ord-db-qM0"/>
                     <connections>
                         <outlet property="age" destination="fve-Oc-lVy" id="W6e-kL-SUg"/>
                         <outlet property="downPickerText" destination="L89-dU-thb" id="81y-Ha-Q0C"/>
@@ -260,7 +260,49 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFj-BN-t3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="932" y="-398"/>
+            <point key="canvasLocation" x="3368" y="-398"/>
+        </scene>
+        <!--What are your preferences?-->
+        <scene sceneID="zJl-AI-WY1">
+            <objects>
+                <tableViewController id="nhP-5t-rnp" customClass="PreferenceTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="yck-3S-PLF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bzl-N6-AUQ">
+                            <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <accessibility key="accessibilityConfiguration" label="nextLabel">
+                                <accessibilityTraits key="traits" button="YES" staticText="YES"/>
+                            </accessibility>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="preflabel" id="ks0-Yg-qKa">
+                                <rect key="frame" x="0.0" y="136" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ks0-Yg-qKa" id="rDf-SG-5yA">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nhP-5t-rnp" id="jB1-AY-J7G"/>
+                            <outlet property="delegate" destination="nhP-5t-rnp" id="ZoB-ag-vy0"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="What are your preferences?" id="IPD-1y-Gdh"/>
+                    <connections>
+                        <segue destination="hGo-Na-0ru" kind="show" id="hCj-5F-mq6"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8NG-oC-1hr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4051" y="-398"/>
         </scene>
         <!--Asses2 View Controller-->
         <scene sceneID="kPB-S0-s4Q">
@@ -335,16 +377,12 @@
                             <constraint firstAttribute="trailingMargin" secondItem="h6z-Lf-S1o" secondAttribute="trailing" id="yPn-ze-WDw"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="allerginsTableView" destination="X2w-vp-AoO" id="Ytf-jx-yyd"/>
-                        <outlet property="preferenceTableView" destination="O69-kF-PYn" id="hNX-5F-GSI"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rpl-EE-wxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1620" y="-806"/>
+            <point key="canvasLocation" x="2488" y="-1218"/>
         </scene>
-        <!--Allergen Table View Controller-->
+        <!--What are you allergic to?-->
         <scene sceneID="FoG-8V-buT">
             <objects>
                 <tableViewController id="hGo-Na-0ru" customClass="AllergenTableViewController" sceneMemberID="viewController">
@@ -352,16 +390,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are you allergic to?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8he-pc-807">
-                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AllergensLabel" id="m02-0e-SI4">
-                                <rect key="frame" x="0.0" y="72" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="allergenslabel" id="m02-0e-SI4">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="m02-0e-SI4" id="VrI-tw-YFw">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -374,28 +405,31 @@
                             <outlet property="delegate" destination="hGo-Na-0ru" id="5sq-IG-7rf"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="What are you allergic to?" id="EF4-Mx-7Ty">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="MtC-hK-cP1"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BKm-UG-q6j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2342" y="-398"/>
+            <point key="canvasLocation" x="4778" y="-398"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="8dV-11-fFv">
+        <scene sceneID="TLv-AV-wX0">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f1t-ax-RG6" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="czM-94-pma" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ys8-Q2-pcY">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nP9-BZ-5Ww">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="6wH-LC-QjH" kind="relationship" relationship="rootViewController" id="yB2-DE-HEg"/>
+                        <segue destination="6wH-LC-QjH" kind="relationship" relationship="rootViewController" id="N6c-W3-BIz"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9UO-rn-P9C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tkb-R2-dyU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="120" y="-398"/>
+            <point key="canvasLocation" x="2556" y="-398"/>
         </scene>
     </scenes>
 </document>

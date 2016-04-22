@@ -1,5 +1,5 @@
 //
-//  AllergenTableViewController.h
+//  CustomNavViewController.h
 //  CalorieTracker
 //
 //  Created by Amin Davoodi on 4/22/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AllergenTableViewController : UITableViewController
-
-@property NSMutableArray *allergens;
+@interface CustomNavViewController : UINavigationController
 
 @end

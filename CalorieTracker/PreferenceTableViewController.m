@@ -1,29 +1,41 @@
 //
-//  AllergenTableViewController.m
+//  PreferenceTableViewController.m
 //  CalorieTracker
 //
 //  Created by Amin Davoodi on 4/22/16.
 //  Copyright © 2016 TouchTap. All rights reserved.
 //
 
-#import "AllergenTableViewController.h"
+#import "PreferenceTableViewController.h"
 
-@interface AllergenTableViewController ()
+@interface PreferenceTableViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @end
 
-@implementation AllergenTableViewController
+@implementation PreferenceTableViewController
+
+
+- (void)insertNewObject:(id)sender {
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.prefs = [[NSMutableArray alloc] init];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    self.title = @"what are your preferences?";
+
     // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+     self.clearsSelectionOnViewWillAppear = NO;
     
+//    [self.navigation setBarTintColor:[UIColor yellowColor]];
+        UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
+    
+    [self.navigationController.navigationBar setHidden:NO];
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    UIBarButtonItem *nextButton = [[UIBarButtonItem alloc] init];
-    [nextButton setTitle:@"Next"];
-    self.navigationItem.rightBarButtonItem = nextButton;
+     self.navigationItem.rightBarButtonItem = addButton;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,51 +45,45 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    NSLog(@"NUM SECS CALLED");
     return 1;
 }
 
 // number of row in the section, I assume there is only 1 row
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSLog(@"NUMROWS CALLEd");
     return [[[NSUserDefaults standardUserDefaults] dictionaryForKey:@"DictKey"] count];
 }
-
+    
 // the cell will be returned to the tableView
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"TEST");
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"allergenslabel"forIndexPath:indexPath];
+    NSLog(@"FEEGE");
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"preflabel"forIndexPath:indexPath];
     
     if (cell == nil)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"allergenslabel"];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"preflabel"];
     }
     
     NSDictionary *dict = [[NSUserDefaults standardUserDefaults] dictionaryForKey:@"DictKey"];
-    NSArray * values = [dict allValues];
-    cell.textLabel.text = values[indexPath.row];
-    
-    NSLog(@"something printed %ld", (long)indexPath.row);
+    NSArray * values = [dict allKeys];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", values[indexPath.row]];
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"allergenslabel"forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"preflabel"forIndexPath:indexPath];
     
     if (cell.selected)
     {
-        [self.allergens removeObject:cell];
+        [self.prefs removeObject:cell];
     }
     else
     {
-        [self.allergens addObject:cell];
+        [self.prefs addObject:cell];
     }
-    
 }
 
 /*

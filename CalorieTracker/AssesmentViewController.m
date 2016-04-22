@@ -22,7 +22,7 @@
 - (IBAction)assesmentDone:(id)sender
 {
     // set height weight etc and calculate tdee
-    
+        
     float h = self.height.text.floatValue;
     float w = self.weight.text.floatValue;
     int age = self.age.text.intValue;
@@ -102,13 +102,16 @@
     
 }
 
+- (void) viewWillAppear:(BOOL)animated  {
+    [[self navigationController] setNavigationBarHidden:NO animated:YES];
+
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-
-#pragma mark - Navigation
 
 
 @end

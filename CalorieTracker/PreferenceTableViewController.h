@@ -1,5 +1,5 @@
 //
-//  AllergenTableViewController.h
+//  PreferenceTableViewController.h
 //  CalorieTracker
 //
 //  Created by Amin Davoodi on 4/22/16.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AllergenTableViewController : UITableViewController
+@interface PreferenceTableViewController : UITableViewController
 
-@property NSMutableArray *allergens;
+@property NSMutableArray *prefs;
 
 @end

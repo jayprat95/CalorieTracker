@@ -36,6 +36,8 @@
 		6C085B791CC9E7BB00D1C656 /* AllergensTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C085B781CC9E7BB00D1C656 /* AllergensTableView.m */; };
 		6C085B7C1CC9E9CC00D1C656 /* PreferenceTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C085B7B1CC9E9CC00D1C656 /* PreferenceTableView.m */; };
 		6C085B7F1CCA1A1B00D1C656 /* AllergenTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C085B7E1CCA1A1B00D1C656 /* AllergenTableViewController.m */; };
+		6C085B821CCA998800D1C656 /* PreferenceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C085B811CCA998800D1C656 /* PreferenceTableViewController.m */; };
+		6C085B851CCAAD6900D1C656 /* CustomNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C085B841CCAAD6900D1C656 /* CustomNavViewController.m */; };
 		84886E601C80D7B3002C1683 /* DateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84886E5F1C80D7B3002C1683 /* DateTest.m */; };
 		84886E621C80D7D6002C1683 /* UserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84886E611C80D7D6002C1683 /* UserTest.m */; };
 		84E6D7E11C9F5C8D00C9DC09 /* DiningTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E6D7E01C9F5C8D00C9DC09 /* DiningTableViewController.m */; };
@@ -124,6 +126,10 @@
 		6C085B7B1CC9E9CC00D1C656 /* PreferenceTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceTableView.m; sourceTree = "<group>"; };
 		6C085B7D1CCA1A1B00D1C656 /* AllergenTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllergenTableViewController.h; sourceTree = "<group>"; };
 		6C085B7E1CCA1A1B00D1C656 /* AllergenTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllergenTableViewController.m; sourceTree = "<group>"; };
+		6C085B801CCA998800D1C656 /* PreferenceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceTableViewController.h; sourceTree = "<group>"; };
+		6C085B811CCA998800D1C656 /* PreferenceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceTableViewController.m; sourceTree = "<group>"; };
+		6C085B831CCAAD6900D1C656 /* CustomNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavViewController.h; sourceTree = "<group>"; };
+		6C085B841CCAAD6900D1C656 /* CustomNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavViewController.m; sourceTree = "<group>"; };
 		84886E5F1C80D7B3002C1683 /* DateTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTest.m; sourceTree = "<group>"; };
 		84886E611C80D7D6002C1683 /* UserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTest.m; sourceTree = "<group>"; };
 		84E6D7DF1C9F5C8D00C9DC09 /* DiningTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiningTableViewController.h; sourceTree = "<group>"; };
@@ -267,6 +273,8 @@
 			children = (
 				6C085B7D1CCA1A1B00D1C656 /* AllergenTableViewController.h */,
 				6C085B7E1CCA1A1B00D1C656 /* AllergenTableViewController.m */,
+				6C085B801CCA998800D1C656 /* PreferenceTableViewController.h */,
+				6C085B811CCA998800D1C656 /* PreferenceTableViewController.m */,
 				271DEBFE1CC0BED5005ED77B /* AssesmentViewController.h */,
 				271DEBFF1CC0BED5005ED77B /* AssesmentViewController.m */,
 				6C085B741CC9DEBA00D1C656 /* Asses2ViewController.h */,
@@ -276,6 +284,8 @@
 				271DEC031CC1348B005ED77B /* DownPicker.h */,
 				271DEC041CC1348B005ED77B /* DownPicker.m */,
 				271DEC051CC1348B005ED77B /* UIDownPicker.h */,
+				6C085B831CCAAD6900D1C656 /* CustomNavViewController.h */,
+				6C085B841CCAAD6900D1C656 /* CustomNavViewController.m */,
 				271DEC061CC1348B005ED77B /* UIDownPicker.m */,
 				2741ABFB1CA438110006D035 /* CustomFoodCell.xib */,
 				271DEBC91CC0272D005ED77B /* CustomNav.xib */,
@@ -547,9 +557,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6272A901CA431EE00A5AA54 /* TPTabBarController.m in Sources */,
+				6C085B851CCAAD6900D1C656 /* CustomNavViewController.m in Sources */,
 				F6064E781CB410D0004F02D8 /* BROptionItem.m in Sources */,
 				2741ABFF1CA439C20006D035 /* FoodsCell.m in Sources */,
 				271DEBD01CC02A53005ED77B /* Navigation.m in Sources */,
+				6C085B821CCA998800D1C656 /* PreferenceTableViewController.m in Sources */,
 				2760BA811CA34F430022B05E /* NutritionViewController.m in Sources */,
 				271DEC071CC1348B005ED77B /* DownPicker.m in Sources */,
 				6C085B791CC9E7BB00D1C656 /* AllergensTableView.m in Sources */,
