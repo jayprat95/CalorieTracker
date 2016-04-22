@@ -33,14 +33,43 @@
     float ageMult = (self.female.enabled) ? 4.7 : 6.8;
     
     float BMR = adder + (weightMult * w) + (heightMult * h) - (ageMult * age);
+    
+    NSString *selectedValue = self.downPicker.text;
+    
+    float activity_level;
+    
+    if ([selectedValue isEqualToString:@"Sedentary"])
+    {
+        activity_level = 1.2;
+    }
+    else if ([selectedValue isEqualToString:@"Lightly Active"])
+    {
+        activity_level = 1.375;
+    }
+    else if ([selectedValue isEqualToString:@"Moderately Active"])
+    {
+        activity_level = 1.55;
+    }
+    else if ([selectedValue isEqualToString:@"Very Active"])
+    {
+        activity_level = 1.725;
+    }
+    else if ([selectedValue isEqualToString:@"Extremely Active"])
+    {
+        activity_level = 1.9;
+    }
+    
+    float tdee = activity_level * BMR;
 
     [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"assesment"];
     [[NSUserDefaults standardUserDefaults] setFloat:h forKey:@"height"];
     [[NSUserDefaults standardUserDefaults] setFloat:w forKey:@"weight"];
     [[NSUserDefaults standardUserDefaults] setBool:self.female.enabled forKey:@"gender"];
     [[NSUserDefaults standardUserDefaults] setInteger:age forKey:@"age"];
+    [[NSUserDefaults standardUserDefaults] setFloat:tdee forKey:@"tdee"];
+    [[NSUserDefaults standardUserDefaults] setFloat:tdee forKey:@"caloriesRemaining"];
     
-    [[NSUserDefaults standardUserDefaults] setObject:self.height.text forKey:@"tdee"];
+    //TODO go to the next assesment page.
 }
 
 - (void)viewDidLoad {
@@ -50,16 +79,27 @@
     NSMutableArray* bandArray = [[NSMutableArray alloc] init];
     
     // add some sample data
-    [bandArray addObject:@"Offsprings"];
-    [bandArray addObject:@"Radiohead"];
-    [bandArray addObject:@"Muse"];
-    [bandArray addObject:@"R.E.M."];
-    [bandArray addObject:@"The Killers"];
-    [bandArray addObject:@"Social Distortion"];
+    [bandArray addObject:@"Sedentary"];
+    [bandArray addObject:@"Lightly Active"];
+    [bandArray addObject:@"Moderately Active"];
+    [bandArray addObject:@"Very Active"];
+    [bandArray addObject:@"Extremely Active"];
     
     // bind yourTextField to DownPicker
     self.downPicker = [[DownPicker alloc] initWithTextField:self.downPickerText withData:bandArray];
+    
     // Do any additional setup after loading the view.
+    
+    // Create history list of dishes
+    NSMutableArray *arr = [[NSMutableArray alloc] init];
+    
+    //convert your array to `NSData` object using `NSKeyedArchiver`
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:arr];
+    
+    //store it to `NSUserDefaults`
+    [[NSUserDefaults standardUserDefaults] setObject:data forKey:@"history_list"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -67,14 +107,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

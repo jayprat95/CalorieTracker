@@ -22,7 +22,6 @@ UIViewController *viewCont;
 -(id)initWithViewController:(UIViewController*)c {
     if (self = [super init])
     {
-        NSLog(@"On init, controller is: %@", c);
         viewCont = c;
     }
     return self;

@@ -23,17 +23,16 @@
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
     if ([prefs boolForKey:@"HMIsCreated"] == NO) {
         
-        NSDictionary* dict = @{@"milk":@(0), @"milk":@(0), @"wheat":@(0), @"soy":@(0), @"cheese":@(0), @"egg":@(0), @"beef":@(0), @"turkey":@(0), @"chicken":@(0), @"pork":@(0), @"peanuts":@(0), @"veggie":@(0), @"pizza":@(0), @"lamb":@(0), @"onion":@(0), @"tomato":@(0), @"cream":@(0), @"pepper":@(0), @"shellfish":@(0), @"gluten":@(0)};
+        NSDictionary* dict = @{@"milk":@(0), @"wheat":@(0), @"soy":@(0), @"cheese":@(0), @"egg":@(0), @"beef":@(0), @"turkey":@(0), @"chicken":@(0), @"pork":@(0), @"peanuts":@(0), @"veggie":@(0), @"pizza":@(0), @"lamb":@(0), @"onion":@(0), @"tomato":@(0), @"cream":@(0), @"pepper":@(0), @"shellfish":@(0), @"gluten":@(0)};
         [prefs setObject:dict forKey:@"DictKey"];
         [prefs setBool:YES forKey:@"HMIsCreated"];
-        
-        
     }
+    
     BOOL assesment = [prefs boolForKey:@"assesment"];
     
     NSString *storyboardId = assesment ? @"mainStoryBoardID" : @"assesmentID";
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *initViewController = [storyboard instantiateViewControllerWithIdentifier:storyboardId];
+    UIViewController *initViewController = [storyboard instantiateViewControllerWithIdentifier:@"assesmentID"];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = initViewController;

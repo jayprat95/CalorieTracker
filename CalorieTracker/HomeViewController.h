@@ -7,7 +7,18 @@
 //
 
 #import "ViewController.h"
+#import "Navigation.h"
+#import "Dish+CoreDataProperties.h"
 
 @interface HomeViewController : UIViewController
+
+@property float calorieGoal;
+@property float calorieRem;
+
+@property (weak, nonatomic) IBOutlet UILabel *calorieRemainLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *calorieGoalLabel;
+
+-(void) addFood:(Dish*)dish;
 
 @end

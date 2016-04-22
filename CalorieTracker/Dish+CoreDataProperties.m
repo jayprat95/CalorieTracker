@@ -34,5 +34,14 @@
 @dynamic vitamin_b;
 @dynamic vitamin_c;
 @dynamic date;
+@dynamic food_id;
+@dynamic fat_type;
+@dynamic carbon;
+@dynamic vaiu;
+@dynamic vc;
+@dynamic location;
+@dynamic tags;
+@dynamic ingredients;
+@dynamic meal_time;
 
 @end

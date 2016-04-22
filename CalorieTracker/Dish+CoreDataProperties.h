@@ -35,7 +35,16 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSString *vitamin_a;
 @property (nonatomic) NSString *vitamin_b;
 @property (nonatomic) NSString *vitamin_c;
+@property (nonatomic) NSString *fat_type;
+@property (nonatomic) NSString *carbon;
 @property (nullable, nonatomic, retain) NSManagedObject *date;
+@property (nonatomic) int food_id;
+@property (nonatomic) NSString *vaiu;
+@property (nonatomic) NSString *vc;
+@property (nonatomic) NSString *location;
+@property (nonatomic) NSString *ingredients;
+@property (nonatomic) NSString *tags;
+@property (nonatomic) NSString *meal_time;
 
 @end
 

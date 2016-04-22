@@ -7,6 +7,8 @@
 //
 
 #import "Navigation.h"
+#import "HomeViewController.h"
+
 #import "NutritionViewController.h"
 
 @interface NutritionViewController ()
@@ -28,22 +30,24 @@
 
 @implementation NutritionViewController
 
--(instancetype)init
+- (IBAction)addFood:(id)sender
 {
-    self = [super init];
+    NSLog(@"Trans");
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
+                                                             bundle: nil];
     
-    if (self)
-    {
-        //
-    }
+    HomeViewController *controller = (HomeViewController*)[mainStoryboard
+                                                       instantiateViewControllerWithIdentifier: @"mainStoryBoardID"];
     
-    return self;
+    [controller addFood:self.dish];
+    
+    controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    NSLog(@"%@", self.dish.title);
     
     // Set values
     self.nameLabel.text = self.dish.title;

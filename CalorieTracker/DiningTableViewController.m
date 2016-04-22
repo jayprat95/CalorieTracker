@@ -84,30 +84,39 @@ int idxPath;
         {
             case 0:
                 arr = [Parser parseFile:@"abp"];
+                [c setDiningHallName:@"ABP"];
                 break;
             case 1:
                 arr = [Parser parseFile:@"Burger_37"];
+                [c setDiningHallName:@"Burger 37"];
                 break;
             case 2:
                 arr = [Parser parseFile:@"D2"];
+                [c setDiningHallName:@"D2"];
                 break;
             case 3:
                 arr = [Parser parseFile:@"Deets"];
+                [c setDiningHallName:@"Deets"];
                 break;
             case 4:
                 arr = [Parser parseFile:@"Dxpress"];
+                [c setDiningHallName:@"Dxpress"];
                 break;
             case 5:
                 arr = [Parser parseFile:@"hokieGrill"];
+                [c setDiningHallName:@"Hokie Grill"];
                 break;
             case 6:
                 arr = [Parser parseFile:@"Owens"];
+                [c setDiningHallName:@"Owens"];
                 break;
             case 7:
                 arr = [Parser parseFile:@"Turner"];
+                [c setDiningHallName:@"Turner"];
                 break;
             case 8:
                 arr = [Parser parseFile:@"westend"];
+                [c setDiningHallName:@"West End"];
                 break;
             default:
                 NSLog(@"Bad index path");

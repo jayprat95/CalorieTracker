@@ -15,5 +15,6 @@
 @interface FoodTableViewController : UITableViewController
 
 @property NSMutableArray *dishList;
+@property NSString *diningHallName;
 
 @end

@@ -17,13 +17,6 @@
 		271DEBD91CC04F0D005ED77B /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 271DEBD81CC04F0D005ED77B /* RecommendViewController.m */; };
 		271DEBDC1CC04FAA005ED77B /* UserProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 271DEBDB1CC04FAA005ED77B /* UserProfileViewController.m */; };
 		271DEBDF1CC0A7F3005ED77B /* FoodTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 271DEBDE1CC0A7F3005ED77B /* FoodTableViewController.m */; };
-		271DEBF51CC0ADA3005ED77B /* Burger_37.csv in Resources */ = {isa = PBXBuildFile; fileRef = 271DEBEE1CC0ADA3005ED77B /* Burger_37.csv */; };
-		271DEBF61CC0ADA3005ED77B /* D2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 271DEBEF1CC0ADA3005ED77B /* D2.csv */; };
-		271DEBF71CC0ADA3005ED77B /* Deets.csv in Resources */ = {isa = PBXBuildFile; fileRef = 271DEBF01CC0ADA3005ED77B /* Deets.csv */; };
-		271DEBF81CC0ADA3005ED77B /* Dxpress.csv in Resources */ = {isa = PBXBuildFile; fileRef = 271DEBF11CC0ADA3005ED77B /* Dxpress.csv */; };
-		271DEBF91CC0ADA3005ED77B /* Owens.csv in Resources */ = {isa = PBXBuildFile; fileRef = 271DEBF21CC0ADA3005ED77B /* Owens.csv */; };
-		271DEBFA1CC0ADA3005ED77B /* Turner.csv in Resources */ = {isa = PBXBuildFile; fileRef = 271DEBF31CC0ADA3005ED77B /* Turner.csv */; };
-		271DEBFB1CC0ADA3005ED77B /* Vet_Cafe.csv in Resources */ = {isa = PBXBuildFile; fileRef = 271DEBF41CC0ADA3005ED77B /* Vet_Cafe.csv */; };
 		271DEC001CC0BED5005ED77B /* AssesmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 271DEBFF1CC0BED5005ED77B /* AssesmentViewController.m */; };
 		271DEC071CC1348B005ED77B /* DownPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC041CC1348B005ED77B /* DownPicker.m */; };
 		271DEC081CC1348B005ED77B /* UIDownPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 271DEC061CC1348B005ED77B /* UIDownPicker.m */; };
@@ -31,7 +24,18 @@
 		2741ABFF1CA439C20006D035 /* FoodsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2741ABFE1CA439C20006D035 /* FoodsCell.m */; };
 		2760BA811CA34F430022B05E /* NutritionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2760BA801CA34F430022B05E /* NutritionViewController.m */; };
 		27A01E3F1CA4A9AC00764D4D /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A01E3E1CA4A9AC00764D4D /* Parser.m */; };
-		27A01E431CA4B2D400764D4D /* westend.csv in Resources */ = {isa = PBXBuildFile; fileRef = 27A01E421CA4B2D400764D4D /* westend.csv */; };
+		6C085B6C1CC96C2500D1C656 /* Burger_37.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6C085B641CC96C2500D1C656 /* Burger_37.csv */; };
+		6C085B6D1CC96C2500D1C656 /* D2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6C085B651CC96C2500D1C656 /* D2.csv */; };
+		6C085B6E1CC96C2500D1C656 /* Deets.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6C085B661CC96C2500D1C656 /* Deets.csv */; };
+		6C085B6F1CC96C2500D1C656 /* Dxpress.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6C085B671CC96C2500D1C656 /* Dxpress.csv */; };
+		6C085B701CC96C2500D1C656 /* Grill_Owens.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6C085B681CC96C2500D1C656 /* Grill_Owens.csv */; };
+		6C085B711CC96C2500D1C656 /* Turner.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6C085B691CC96C2500D1C656 /* Turner.csv */; };
+		6C085B721CC96C2500D1C656 /* Vet_Cafe.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6C085B6A1CC96C2500D1C656 /* Vet_Cafe.csv */; };
+		6C085B731CC96C2500D1C656 /* Westend.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6C085B6B1CC96C2500D1C656 /* Westend.csv */; };
+		6C085B761CC9DEBA00D1C656 /* Asses2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C085B751CC9DEBA00D1C656 /* Asses2ViewController.m */; };
+		6C085B791CC9E7BB00D1C656 /* AllergensTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C085B781CC9E7BB00D1C656 /* AllergensTableView.m */; };
+		6C085B7C1CC9E9CC00D1C656 /* PreferenceTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C085B7B1CC9E9CC00D1C656 /* PreferenceTableView.m */; };
+		6C085B7F1CCA1A1B00D1C656 /* AllergenTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C085B7E1CCA1A1B00D1C656 /* AllergenTableViewController.m */; };
 		84886E601C80D7B3002C1683 /* DateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84886E5F1C80D7B3002C1683 /* DateTest.m */; };
 		84886E621C80D7D6002C1683 /* UserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84886E611C80D7D6002C1683 /* UserTest.m */; };
 		84E6D7E11C9F5C8D00C9DC09 /* DiningTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E6D7E01C9F5C8D00C9DC09 /* DiningTableViewController.m */; };
@@ -90,13 +94,6 @@
 		271DEBDB1CC04FAA005ED77B /* UserProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfileViewController.m; sourceTree = "<group>"; };
 		271DEBDD1CC0A7F3005ED77B /* FoodTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodTableViewController.h; sourceTree = "<group>"; };
 		271DEBDE1CC0A7F3005ED77B /* FoodTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodTableViewController.m; sourceTree = "<group>"; };
-		271DEBEE1CC0ADA3005ED77B /* Burger_37.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Burger_37.csv; sourceTree = "<group>"; };
-		271DEBEF1CC0ADA3005ED77B /* D2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = D2.csv; sourceTree = "<group>"; };
-		271DEBF01CC0ADA3005ED77B /* Deets.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Deets.csv; sourceTree = "<group>"; };
-		271DEBF11CC0ADA3005ED77B /* Dxpress.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dxpress.csv; sourceTree = "<group>"; };
-		271DEBF21CC0ADA3005ED77B /* Owens.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Owens.csv; sourceTree = "<group>"; };
-		271DEBF31CC0ADA3005ED77B /* Turner.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Turner.csv; sourceTree = "<group>"; };
-		271DEBF41CC0ADA3005ED77B /* Vet_Cafe.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vet_Cafe.csv; sourceTree = "<group>"; };
 		271DEBFE1CC0BED5005ED77B /* AssesmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssesmentViewController.h; sourceTree = "<group>"; };
 		271DEBFF1CC0BED5005ED77B /* AssesmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssesmentViewController.m; sourceTree = "<group>"; };
 		271DEC031CC1348B005ED77B /* DownPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownPicker.h; sourceTree = "<group>"; };
@@ -110,8 +107,23 @@
 		2760BA801CA34F430022B05E /* NutritionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NutritionViewController.m; sourceTree = "<group>"; };
 		27A01E3D1CA4A9AC00764D4D /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
 		27A01E3E1CA4A9AC00764D4D /* Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parser.m; sourceTree = "<group>"; };
-		27A01E421CA4B2D400764D4D /* westend.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = westend.csv; sourceTree = "<group>"; };
 		4310C0EE1C47F7C95922C411 /* Pods-CalorieTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalorieTracker/Pods-CalorieTracker.release.xcconfig"; sourceTree = "<group>"; };
+		6C085B641CC96C2500D1C656 /* Burger_37.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Burger_37.csv; sourceTree = "<group>"; };
+		6C085B651CC96C2500D1C656 /* D2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = D2.csv; sourceTree = "<group>"; };
+		6C085B661CC96C2500D1C656 /* Deets.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Deets.csv; sourceTree = "<group>"; };
+		6C085B671CC96C2500D1C656 /* Dxpress.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dxpress.csv; sourceTree = "<group>"; };
+		6C085B681CC96C2500D1C656 /* Grill_Owens.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Grill_Owens.csv; sourceTree = "<group>"; };
+		6C085B691CC96C2500D1C656 /* Turner.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Turner.csv; sourceTree = "<group>"; };
+		6C085B6A1CC96C2500D1C656 /* Vet_Cafe.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vet_Cafe.csv; sourceTree = "<group>"; };
+		6C085B6B1CC96C2500D1C656 /* Westend.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Westend.csv; sourceTree = "<group>"; };
+		6C085B741CC9DEBA00D1C656 /* Asses2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Asses2ViewController.h; sourceTree = "<group>"; };
+		6C085B751CC9DEBA00D1C656 /* Asses2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Asses2ViewController.m; sourceTree = "<group>"; };
+		6C085B771CC9E7BB00D1C656 /* AllergensTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllergensTableView.h; sourceTree = "<group>"; };
+		6C085B781CC9E7BB00D1C656 /* AllergensTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllergensTableView.m; sourceTree = "<group>"; };
+		6C085B7A1CC9E9CC00D1C656 /* PreferenceTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceTableView.h; sourceTree = "<group>"; };
+		6C085B7B1CC9E9CC00D1C656 /* PreferenceTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceTableView.m; sourceTree = "<group>"; };
+		6C085B7D1CCA1A1B00D1C656 /* AllergenTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllergenTableViewController.h; sourceTree = "<group>"; };
+		6C085B7E1CCA1A1B00D1C656 /* AllergenTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllergenTableViewController.m; sourceTree = "<group>"; };
 		84886E5F1C80D7B3002C1683 /* DateTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTest.m; sourceTree = "<group>"; };
 		84886E611C80D7D6002C1683 /* UserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTest.m; sourceTree = "<group>"; };
 		84E6D7DF1C9F5C8D00C9DC09 /* DiningTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiningTableViewController.h; sourceTree = "<group>"; };
@@ -223,14 +235,14 @@
 		F6BFB8601C651F720056C268 = {
 			isa = PBXGroup;
 			children = (
-				271DEBEE1CC0ADA3005ED77B /* Burger_37.csv */,
-				271DEBEF1CC0ADA3005ED77B /* D2.csv */,
-				271DEBF01CC0ADA3005ED77B /* Deets.csv */,
-				271DEBF11CC0ADA3005ED77B /* Dxpress.csv */,
-				271DEBF21CC0ADA3005ED77B /* Owens.csv */,
-				271DEBF31CC0ADA3005ED77B /* Turner.csv */,
-				271DEBF41CC0ADA3005ED77B /* Vet_Cafe.csv */,
-				27A01E421CA4B2D400764D4D /* westend.csv */,
+				6C085B641CC96C2500D1C656 /* Burger_37.csv */,
+				6C085B651CC96C2500D1C656 /* D2.csv */,
+				6C085B661CC96C2500D1C656 /* Deets.csv */,
+				6C085B671CC96C2500D1C656 /* Dxpress.csv */,
+				6C085B681CC96C2500D1C656 /* Grill_Owens.csv */,
+				6C085B691CC96C2500D1C656 /* Turner.csv */,
+				6C085B6A1CC96C2500D1C656 /* Vet_Cafe.csv */,
+				6C085B6B1CC96C2500D1C656 /* Westend.csv */,
 				F6BFB86B1C651F720056C268 /* CalorieTracker */,
 				F6BFB8881C651F730056C268 /* CalorieTrackerTests */,
 				F6BFB8931C651F730056C268 /* CalorieTrackerUITests */,
@@ -253,8 +265,14 @@
 		F6BFB86B1C651F720056C268 /* CalorieTracker */ = {
 			isa = PBXGroup;
 			children = (
+				6C085B7D1CCA1A1B00D1C656 /* AllergenTableViewController.h */,
+				6C085B7E1CCA1A1B00D1C656 /* AllergenTableViewController.m */,
 				271DEBFE1CC0BED5005ED77B /* AssesmentViewController.h */,
 				271DEBFF1CC0BED5005ED77B /* AssesmentViewController.m */,
+				6C085B741CC9DEBA00D1C656 /* Asses2ViewController.h */,
+				6C085B751CC9DEBA00D1C656 /* Asses2ViewController.m */,
+				F6BFB86F1C651F720056C268 /* AppDelegate.h */,
+				F6BFB8701C651F720056C268 /* AppDelegate.m */,
 				271DEC031CC1348B005ED77B /* DownPicker.h */,
 				271DEC041CC1348B005ED77B /* DownPicker.m */,
 				271DEC051CC1348B005ED77B /* UIDownPicker.h */,
@@ -273,17 +291,18 @@
 				2760BA801CA34F430022B05E /* NutritionViewController.m */,
 				271DEBC61CC01B9E005ED77B /* HomeViewController.h */,
 				271DEBC71CC01B9E005ED77B /* HomeViewController.m */,
-				F6BFB86F1C651F720056C268 /* AppDelegate.h */,
-				F6BFB8701C651F720056C268 /* AppDelegate.m */,
 				27A01E3D1CA4A9AC00764D4D /* Parser.h */,
 				27A01E3E1CA4A9AC00764D4D /* Parser.m */,
 				271DEBDA1CC04FAA005ED77B /* UserProfileViewController.h */,
 				271DEBDB1CC04FAA005ED77B /* UserProfileViewController.m */,
 				271DEBD71CC04F0D005ED77B /* RecommendViewController.h */,
 				271DEBD81CC04F0D005ED77B /* RecommendViewController.m */,
+				6C085B771CC9E7BB00D1C656 /* AllergensTableView.h */,
+				6C085B781CC9E7BB00D1C656 /* AllergensTableView.m */,
+				6C085B7A1CC9E9CC00D1C656 /* PreferenceTableView.h */,
+				6C085B7B1CC9E9CC00D1C656 /* PreferenceTableView.m */,
 				F6BFB8721C651F720056C268 /* ViewController.h */,
 				F6BFB8731C651F720056C268 /* ViewController.m */,
-				F6BFB8751C651F720056C268 /* Main.storyboard */,
 				F6272A8E1CA431EE00A5AA54 /* TPTabBarController.h */,
 				F6272A8F1CA431EE00A5AA54 /* TPTabBarController.m */,
 				F6D6FD9C1CB48A4000883CD6 /* BROptionsButton.h */,
@@ -439,22 +458,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C085B6D1CC96C2500D1C656 /* D2.csv in Resources */,
+				6C085B701CC96C2500D1C656 /* Grill_Owens.csv in Resources */,
+				6C085B6E1CC96C2500D1C656 /* Deets.csv in Resources */,
 				F6BFB87C1C651F720056C268 /* Assets.xcassets in Resources */,
-				27A01E431CA4B2D400764D4D /* westend.csv in Resources */,
 				271DEBD61CC04DDB005ED77B /* genericGraph.jpeg in Resources */,
-				271DEBFB1CC0ADA3005ED77B /* Vet_Cafe.csv in Resources */,
 				271DEBCA1CC0272D005ED77B /* CustomNav.xib in Resources */,
 				271DEBC51CC019C7005ED77B /* Main.storyboard in Resources */,
+				6C085B6F1CC96C2500D1C656 /* Dxpress.csv in Resources */,
+				6C085B721CC96C2500D1C656 /* Vet_Cafe.csv in Resources */,
 				2741ABFC1CA438110006D035 /* CustomFoodCell.xib in Resources */,
 				271DEBD41CC04D15005ED77B /* UserProfile.storyboard in Resources */,
+				6C085B711CC96C2500D1C656 /* Turner.csv in Resources */,
+				6C085B6C1CC96C2500D1C656 /* Burger_37.csv in Resources */,
 				271DEBD21CC049DC005ED77B /* Recommend.storyboard in Resources */,
-				271DEBF81CC0ADA3005ED77B /* Dxpress.csv in Resources */,
-				271DEBF91CC0ADA3005ED77B /* Owens.csv in Resources */,
-				271DEBFA1CC0ADA3005ED77B /* Turner.csv in Resources */,
-				271DEBF71CC0ADA3005ED77B /* Deets.csv in Resources */,
-				271DEBF61CC0ADA3005ED77B /* D2.csv in Resources */,
 				F6BFB8771C651F720056C268 /* Dining.storyboard in Resources */,
-				271DEBF51CC0ADA3005ED77B /* Burger_37.csv in Resources */,
+				6C085B731CC96C2500D1C656 /* Westend.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,13 +552,16 @@
 				271DEBD01CC02A53005ED77B /* Navigation.m in Sources */,
 				2760BA811CA34F430022B05E /* NutritionViewController.m in Sources */,
 				271DEC071CC1348B005ED77B /* DownPicker.m in Sources */,
+				6C085B791CC9E7BB00D1C656 /* AllergensTableView.m in Sources */,
 				F652C45C1C7E240D003980C4 /* User+CoreDataProperties.m in Sources */,
 				F6D6FD9E1CB48A4000883CD6 /* BROptionsButton.m in Sources */,
 				F652C4631C7E2439003980C4 /* Dish.m in Sources */,
+				6C085B7C1CC9E9CC00D1C656 /* PreferenceTableView.m in Sources */,
 				27A01E3F1CA4A9AC00764D4D /* Parser.m in Sources */,
 				271DEC081CC1348B005ED77B /* UIDownPicker.m in Sources */,
 				271DEBDF1CC0A7F3005ED77B /* FoodTableViewController.m in Sources */,
 				F6BFB8741C651F720056C268 /* ViewController.m in Sources */,
+				6C085B761CC9DEBA00D1C656 /* Asses2ViewController.m in Sources */,
 				271DEBDC1CC04FAA005ED77B /* UserProfileViewController.m in Sources */,
 				271DEBC81CC01B9E005ED77B /* HomeViewController.m in Sources */,
 				F652C45D1C7E240D003980C4 /* User.m in Sources */,
@@ -551,6 +573,7 @@
 				F652C4621C7E2439003980C4 /* Dish+CoreDataProperties.m in Sources */,
 				F6BFB86E1C651F720056C268 /* main.m in Sources */,
 				271DEC001CC0BED5005ED77B /* AssesmentViewController.m in Sources */,
+				6C085B7F1CCA1A1B00D1C656 /* AllergenTableViewController.m in Sources */,
 				271DEBD91CC04F0D005ED77B /* RecommendViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
