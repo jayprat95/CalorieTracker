@@ -10,7 +10,7 @@
 #import "AFNetworking.h"
 
 @interface AppDelegate ()
-
+@property (strong, nonatomic) UINavigationController *navController;
 @end
 
 @implementation AppDelegate
@@ -36,7 +36,10 @@
     UIViewController *initViewController = [storyboard instantiateViewControllerWithIdentifier:@"assesmentID"];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = initViewController;
+    
+
+    self.navController = [[UINavigationController alloc] initWithRootViewController:initViewController];
+    self.window.rootViewController = self.navController;
     [self.window makeKeyAndVisible];
 
     

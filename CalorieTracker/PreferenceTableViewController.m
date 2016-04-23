@@ -78,10 +78,12 @@
     
     if (cell.selected)
     {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
         [self.prefs removeObject:cell];
     }
     else
     {
+        cell.accessoryType = UITableViewCellAccessoryNone;
         [self.prefs addObject:cell];
     }
 }
