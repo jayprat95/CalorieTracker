@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "AFNetworking.h"
+#import "Parser.h"
 
 @interface AppDelegate ()
 @property (strong, nonatomic) UINavigationController *navController;
@@ -21,6 +22,8 @@
     // Override point for customization after application launch.
     // check if completed the assesment, so save assesment boolean to ios device and load it
     
+    self.allFoods = [[NSMutableDictionary alloc] init];
+    
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
 //    if ([prefs boolForKey:@"HMIsCreated"] == NO) {
     
@@ -31,19 +34,31 @@
     
     BOOL assesment = [prefs boolForKey:@"assesment"];
     
-    NSString *storyboardId = assesment ? @"mainStoryBoardID" : @"assesmentID";
+    NSString *storyboardId = assesment ? @"mainStoryBoardID" : @"navID";
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *initViewController = [storyboard instantiateViewControllerWithIdentifier:@"assesmentID"];
-    
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
+    UIViewController *initViewController = [storyboard instantiateViewControllerWithIdentifier:@"navID"];
 
-    self.navController = [[UINavigationController alloc] initWithRootViewController:initViewController];
-    self.window.rootViewController = self.navController;
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = initViewController;
     [self.window makeKeyAndVisible];
 
+    [self addToFoods:[Parser parseFile:@"Burger_37"]];
+    [self addToFoods:[Parser parseFile:@"D2"]];
+    [self addToFoods:[Parser parseFile:@"Deets"]];
+    [self addToFoods:[Parser parseFile:@"Dxpress"]];
+    [self addToFoods:[Parser parseFile:@"Grill_Owens"]];
+    [self addToFoods:[Parser parseFile:@"Turner"]];
+    [self addToFoods:[Parser parseFile:@"Westend"]];
     
     return YES;
+}
+
+-(void)addToFoods:(NSMutableArray*)array
+{
+    for (Dish* dish in array)
+    {
+        [self.allFoods setObject:dish forKey:[NSString stringWithFormat:@"%d", dish.food_id]];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

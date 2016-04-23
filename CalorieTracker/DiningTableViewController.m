@@ -47,7 +47,7 @@ int idxPath;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 9;
+    return 7;
 }
 
 
@@ -60,7 +60,7 @@ int idxPath;
     }
 
     // Static dining halls
-    NSArray *diningHalls = @[@"Au Bon Pain", @"Burger 37", @"D2", @"Deets", @"DXpress", @"Hokie Grill", @"Owens", @"Turner", @"West End"];
+    NSArray *diningHalls = @[@"Burger 37", @"D2", @"Deets", @"DXpress", @"Hokie Grill / Owens", @"Turner", @"West End"];
 
     // Configure the cell...
     cell.textLabel.text = diningHalls[indexPath.row];
@@ -83,28 +83,24 @@ int idxPath;
         switch (idxPath)
         {
             case 0:
-                arr = [Parser parseFile:@"abp"];
-                [c setDiningHallName:@"ABP"];
-                break;
-            case 1:
                 arr = [Parser parseFile:@"Burger_37"];
                 [c setDiningHallName:@"Burger 37"];
                 break;
-            case 2:
+            case 1:
                 arr = [Parser parseFile:@"D2"];
                 [c setDiningHallName:@"D2"];
                 break;
-            case 3:
+            case 2:
                 arr = [Parser parseFile:@"Deets"];
                 [c setDiningHallName:@"Deets"];
                 break;
-            case 4:
+            case 3:
                 arr = [Parser parseFile:@"Dxpress"];
                 [c setDiningHallName:@"Dxpress"];
                 break;
-            case 5:
-                arr = [Parser parseFile:@"hokieGrill"];
-                [c setDiningHallName:@"Hokie Grill"];
+            case 4:
+                arr = [Parser parseFile:@"Grill_Owens"];
+                [c setDiningHallName:@"Hokie Grill / Owens"];
                 break;
             case 6:
                 arr = [Parser parseFile:@"Owens"];
@@ -115,7 +111,7 @@ int idxPath;
                 [c setDiningHallName:@"Turner"];
                 break;
             case 8:
-                arr = [Parser parseFile:@"westend"];
+                arr = [Parser parseFile:@"Westend"];
                 [c setDiningHallName:@"West End"];
                 break;
             default:

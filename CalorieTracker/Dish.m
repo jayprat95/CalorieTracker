@@ -11,5 +11,22 @@
 @implementation Dish
 
 // Insert code here to add functionality to your managed object subclass
+//
+//- (id)initWithCoder:(NSCoder *)aDecoder
+//{
+//    
+//    if(self = [super initWithCoder:aDecoder])
+//    {
+//        self = [aDecoder decodeObjectForKey:@"DishCoderKey"];
+//    }
+//    
+//    return self;
+//}
+//
+//- (void)encodeWithCoder:(NSCoder *)enCoder
+//{
+//    [super encodeWithCoder:enCoder];
+//    [enCoder encodeObject:self forKey:@"DishEncodeKey"];
+//}
 
 @end

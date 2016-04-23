@@ -7,6 +7,8 @@
 //
 
 #import "AssesmentViewController.h"
+#import "Dish.h"
+#import "Parser.h"
 
 @interface AssesmentViewController ()
 
@@ -87,18 +89,6 @@
     
     // bind yourTextField to DownPicker
     self.downPicker = [[DownPicker alloc] initWithTextField:self.downPickerText withData:bandArray];
-    
-    // Do any additional setup after loading the view.
-    
-    // Create history list of dishes
-    NSMutableArray *arr = [[NSMutableArray alloc] init];
-    
-    //convert your array to `NSData` object using `NSKeyedArchiver`
-    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:arr];
-    
-    //store it to `NSUserDefaults`
-    [[NSUserDefaults standardUserDefaults] setObject:data forKey:@"history_list"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
     
 }
 

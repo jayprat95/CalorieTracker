@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DownPicker.h"
 
 @interface RecommendViewController : UIViewController
+
+@property (strong, nonatomic) DownPicker *downPicker;
+@property (weak, nonatomic) IBOutlet UITextField *dpText;
+@property (weak, nonatomic) IBOutlet UITextField *calLabel;
 
 @end

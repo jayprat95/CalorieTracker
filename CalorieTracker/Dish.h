@@ -13,7 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Dish : NSManagedObject
 
-
+//- (id)initWithCoder:(NSCoder *)aDecoder;
+//- (void)encodeWithCoder:(NSCoder *)enCoder;
 
 @end
 

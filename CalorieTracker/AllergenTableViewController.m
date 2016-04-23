@@ -23,13 +23,11 @@
     vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     
     [self presentViewController:vc animated:YES completion:nil];
-    NSLog(@"Trying to go to home page");
 //    [self performSegueWithIdentifier:@("PrefToAllergenSegue") sender:self];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"allergen view tried to load");
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -53,34 +51,23 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    NSLog(@"NUM SECS CALLED");
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSLog(@"NUM ROWS CALLED");
     return [[[NSUserDefaults standardUserDefaults] dictionaryForKey:@"DictKey"] count];
 }
 
 // the cell will be returned to the tableView
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"CELLFORROW");
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"allergenslabel"forIndexPath:indexPath];
     
     if (cell == nil)
     {
-        NSLog(@"Cell is null");
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"allergenslabel"];
     }
-    
-    NSLog(@"Making Dictionary");
-//    NSDictionary *dict = [[NSUserDefaults standardUserDefaults] dictionaryForKey:@"DictKey"];
-//    NSArray * values = [dict allValues];
-//    cell.textLabel.text = values[indexPath.row];
-    
-    NSLog(@"something printed %ld", (long)indexPath.row);
     
     return cell;
 }

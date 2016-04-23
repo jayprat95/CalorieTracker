@@ -18,6 +18,7 @@
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
+@property NSMutableDictionary *allFoods;
 @property HomeViewController *home_vc;
 
 - (void)saveContext;

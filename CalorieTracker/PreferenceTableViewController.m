@@ -24,20 +24,16 @@
     [super viewDidLoad];
     
     self.prefs = [[NSMutableArray alloc] init];
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
-    self.title = @"What are your preferences?";
-
     // Uncomment the following line to preserve selection between presentations.
      self.clearsSelectionOnViewWillAppear = NO;
     
 //    [self.navigation setBarTintColor:[UIColor yellowColor]];
 //        UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    UIBarButtonItem *nextButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(goToNextPage:)];
+//    UIBarButtonItem *nextButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(goToNextPage:)];
     
-    [self.navigationController.navigationBar setHidden:NO];
+//    [self.navigationController.navigationBar setHidden:NO];
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-     self.navigationItem.rightBarButtonItem = nextButton;
+//     self.navigationItem.rightBarButtonItem = nextButton;
     
 }
 

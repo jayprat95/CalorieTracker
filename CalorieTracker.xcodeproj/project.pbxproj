@@ -32,9 +32,6 @@
 		6C085B711CC96C2500D1C656 /* Turner.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6C085B691CC96C2500D1C656 /* Turner.csv */; };
 		6C085B721CC96C2500D1C656 /* Vet_Cafe.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6C085B6A1CC96C2500D1C656 /* Vet_Cafe.csv */; };
 		6C085B731CC96C2500D1C656 /* Westend.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6C085B6B1CC96C2500D1C656 /* Westend.csv */; };
-		6C085B761CC9DEBA00D1C656 /* Asses2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C085B751CC9DEBA00D1C656 /* Asses2ViewController.m */; };
-		6C085B791CC9E7BB00D1C656 /* AllergensTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C085B781CC9E7BB00D1C656 /* AllergensTableView.m */; };
-		6C085B7C1CC9E9CC00D1C656 /* PreferenceTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C085B7B1CC9E9CC00D1C656 /* PreferenceTableView.m */; };
 		6C085B7F1CCA1A1B00D1C656 /* AllergenTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C085B7E1CCA1A1B00D1C656 /* AllergenTableViewController.m */; };
 		6C085B821CCA998800D1C656 /* PreferenceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C085B811CCA998800D1C656 /* PreferenceTableViewController.m */; };
 		6C085B851CCAAD6900D1C656 /* CustomNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C085B841CCAAD6900D1C656 /* CustomNavViewController.m */; };
@@ -118,12 +115,6 @@
 		6C085B691CC96C2500D1C656 /* Turner.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Turner.csv; sourceTree = "<group>"; };
 		6C085B6A1CC96C2500D1C656 /* Vet_Cafe.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vet_Cafe.csv; sourceTree = "<group>"; };
 		6C085B6B1CC96C2500D1C656 /* Westend.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Westend.csv; sourceTree = "<group>"; };
-		6C085B741CC9DEBA00D1C656 /* Asses2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Asses2ViewController.h; sourceTree = "<group>"; };
-		6C085B751CC9DEBA00D1C656 /* Asses2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Asses2ViewController.m; sourceTree = "<group>"; };
-		6C085B771CC9E7BB00D1C656 /* AllergensTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllergensTableView.h; sourceTree = "<group>"; };
-		6C085B781CC9E7BB00D1C656 /* AllergensTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllergensTableView.m; sourceTree = "<group>"; };
-		6C085B7A1CC9E9CC00D1C656 /* PreferenceTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceTableView.h; sourceTree = "<group>"; };
-		6C085B7B1CC9E9CC00D1C656 /* PreferenceTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceTableView.m; sourceTree = "<group>"; };
 		6C085B7D1CCA1A1B00D1C656 /* AllergenTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllergenTableViewController.h; sourceTree = "<group>"; };
 		6C085B7E1CCA1A1B00D1C656 /* AllergenTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllergenTableViewController.m; sourceTree = "<group>"; };
 		6C085B801CCA998800D1C656 /* PreferenceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceTableViewController.h; sourceTree = "<group>"; };
@@ -277,8 +268,6 @@
 				6C085B811CCA998800D1C656 /* PreferenceTableViewController.m */,
 				271DEBFE1CC0BED5005ED77B /* AssesmentViewController.h */,
 				271DEBFF1CC0BED5005ED77B /* AssesmentViewController.m */,
-				6C085B741CC9DEBA00D1C656 /* Asses2ViewController.h */,
-				6C085B751CC9DEBA00D1C656 /* Asses2ViewController.m */,
 				F6BFB86F1C651F720056C268 /* AppDelegate.h */,
 				F6BFB8701C651F720056C268 /* AppDelegate.m */,
 				271DEC031CC1348B005ED77B /* DownPicker.h */,
@@ -307,10 +296,6 @@
 				271DEBDB1CC04FAA005ED77B /* UserProfileViewController.m */,
 				271DEBD71CC04F0D005ED77B /* RecommendViewController.h */,
 				271DEBD81CC04F0D005ED77B /* RecommendViewController.m */,
-				6C085B771CC9E7BB00D1C656 /* AllergensTableView.h */,
-				6C085B781CC9E7BB00D1C656 /* AllergensTableView.m */,
-				6C085B7A1CC9E9CC00D1C656 /* PreferenceTableView.h */,
-				6C085B7B1CC9E9CC00D1C656 /* PreferenceTableView.m */,
 				F6BFB8721C651F720056C268 /* ViewController.h */,
 				F6BFB8731C651F720056C268 /* ViewController.m */,
 				F6272A8E1CA431EE00A5AA54 /* TPTabBarController.h */,
@@ -432,6 +417,7 @@
 				TargetAttributes = {
 					F6BFB8681C651F720056C268 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = NWWHJ76S8Y;
 					};
 					F6BFB8841C651F730056C268 = {
 						CreatedOnToolsVersion = 7.2;
@@ -564,16 +550,13 @@
 				6C085B821CCA998800D1C656 /* PreferenceTableViewController.m in Sources */,
 				2760BA811CA34F430022B05E /* NutritionViewController.m in Sources */,
 				271DEC071CC1348B005ED77B /* DownPicker.m in Sources */,
-				6C085B791CC9E7BB00D1C656 /* AllergensTableView.m in Sources */,
 				F652C45C1C7E240D003980C4 /* User+CoreDataProperties.m in Sources */,
 				F6D6FD9E1CB48A4000883CD6 /* BROptionsButton.m in Sources */,
 				F652C4631C7E2439003980C4 /* Dish.m in Sources */,
-				6C085B7C1CC9E9CC00D1C656 /* PreferenceTableView.m in Sources */,
 				27A01E3F1CA4A9AC00764D4D /* Parser.m in Sources */,
 				271DEC081CC1348B005ED77B /* UIDownPicker.m in Sources */,
 				271DEBDF1CC0A7F3005ED77B /* FoodTableViewController.m in Sources */,
 				F6BFB8741C651F720056C268 /* ViewController.m in Sources */,
-				6C085B761CC9DEBA00D1C656 /* Asses2ViewController.m in Sources */,
 				271DEBDC1CC04FAA005ED77B /* UserProfileViewController.m in Sources */,
 				271DEBC81CC01B9E005ED77B /* HomeViewController.m in Sources */,
 				F652C45D1C7E240D003980C4 /* User.m in Sources */,
@@ -721,10 +704,13 @@
 			baseConfigurationReference = 8D11EDB550C48A2D33855C77 /* Pods-CalorieTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CalorieTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TT.CalorieTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -733,10 +719,13 @@
 			baseConfigurationReference = 4310C0EE1C47F7C95922C411 /* Pods-CalorieTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CalorieTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TT.CalorieTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

@@ -166,19 +166,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bzl-N6-AUQ">
-                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <accessibility key="accessibilityConfiguration" label="nextLabel">
-                                <accessibilityTraits key="traits" button="YES" staticText="YES"/>
-                            </accessibility>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" reuseIdentifier="preflabel" id="ks0-Yg-qKa">
-                                <rect key="frame" x="0.0" y="72" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ks0-Yg-qKa" id="rDf-SG-5yA">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -191,14 +181,17 @@
                             <outlet property="delegate" destination="nhP-5t-rnp" id="ZoB-ag-vy0"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="What are your preferences?" id="IPD-1y-Gdh"/>
-                    <connections>
-                        <segue destination="hGo-Na-0ru" kind="show" identifier="PrefToAllergenSegue" id="hCj-5F-mq6"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="What are your preferences?" id="IPD-1y-Gdh">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="Opk-tw-4mH">
+                            <connections>
+                                <segue destination="hGo-Na-0ru" kind="show" id="YaM-Tq-A1y"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8NG-oC-1hr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4051" y="-398"/>
+            <point key="canvasLocation" x="4045" y="-372"/>
         </scene>
         <!--What are you allergic to?-->
         <scene sceneID="FoG-8V-buT">
@@ -234,7 +227,7 @@
         <!--Navigation Controller-->
         <scene sceneID="TLv-AV-wX0">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="czM-94-pma" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navID" automaticallyAdjustsScrollViewInsets="NO" id="czM-94-pma" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nP9-BZ-5Ww">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -247,7 +240,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tkb-R2-dyU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2556" y="-398"/>
+            <point key="canvasLocation" x="2592" y="-398"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="sLT-cd-H5n">

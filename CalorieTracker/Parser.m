@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 
 @implementation Parser
+//@synthesize dishesDictionary;
 
 static int shift = 0;
 
@@ -67,6 +68,10 @@ static int shift = 0;
         [dishList addObject:dish];
     }
     
+//    NSData* data=[NSKeyedArchiver archivedDataWithRootObject:dishDic];
+//    [[NSUserDefaults standardUserDefaults] setObject:data forKey:@"dishDict"];
+    
+//    _dishesDictionary = dishDic;
     return dishList;
 }
 

@@ -11,6 +11,8 @@
 
 @interface Parser : NSObject
 
+//@property (nonatomic) NSMutableDictionary *dishesDictionary;
+
 +(NSMutableArray*) parseFile: (NSString*) file;
 
 @end
