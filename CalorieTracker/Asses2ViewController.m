@@ -46,14 +46,14 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    NSLog(@"NUM SECS CALLED");
+//    NSLog(@"NUM SECS CALLED");
     return 1;
 }
 
 // number of row in the section, I assume there is only 1 row
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSLog(@"NUMROWS CALLEd");
+//    NSLog(@"NUMROWS CALLEd");
     return [[[NSUserDefaults standardUserDefaults] dictionaryForKey:@"DictKey"] count];
 }
 

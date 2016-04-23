@@ -52,27 +52,25 @@
     
     // Add dish eaten to history of day
     
-    //convert your stored Object back to `NSData` using `NSKeyedUnarchiver`
-    NSData *storedData = [[NSUserDefaults standardUserDefaults] objectForKey:@"history_list"];
-    NSArray *storedArr = [NSArray arrayWithArray:[NSKeyedUnarchiver unarchiveObjectWithData:storedData]];
-
-    NSMutableArray *history = [storedArr mutableCopy];
-    [history addObject:dish];
-//    [[NSUserDefaults standardUserDefaults] setObject:history forKey:@"history_list"];
-    
-    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:history];
-    
-    //store it to `NSUserDefaults`
-    [[NSUserDefaults standardUserDefaults] setObject:data forKey:@"history_list"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-    
-    // Display to screen for breakfast, lunch, dinner
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(40, 70, 300, 100)];
-    label.numberOfLines = 1;
-    label.text = dish.title;
-//    [self.breakfastView addSubview:label];
-    [self.view addSubview:label];
-//    [self.stackView addArrangedSubview:label];
+//    //convert your stored Object back to `NSData` using `NSKeyedUnarchiver`
+//    NSData *storedData = [[NSUserDefaults standardUserDefaults] objectForKey:@"history_list"];
+//    NSArray *storedArr = [NSArray arrayWithArray:[NSKeyedUnarchiver unarchiveObjectWithData:storedData]];
+//
+//    NSMutableArray *history = [storedArr mutableCopy];
+//    [history addObject:dish];
+////    [[NSUserDefaults standardUserDefaults] setObject:history forKey:@"history_list"];
+//    
+//    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:history];
+//    
+//    //store it to `NSUserDefaults`
+//    [[NSUserDefaults standardUserDefaults] setObject:data forKey:@"history_list"];
+//    [[NSUserDefaults standardUserDefaults] synchronize];
+//    
+//    // Display to screen for breakfast, lunch, dinner
+//    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(40, 70, 300, 100)];
+//    label.numberOfLines = 1;
+//    label.text = dish.title;
+////    [self.view addSubview:label];
 }
 
 /*

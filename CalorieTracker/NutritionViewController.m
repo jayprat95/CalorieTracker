@@ -32,7 +32,7 @@
 
 - (IBAction)addFood:(id)sender
 {
-    NSLog(@"Trans");
+    NSLog(@"Adding Food");
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
                                                              bundle: nil];
     
@@ -44,6 +44,7 @@
     controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     
     [self presentViewController:controller animated:YES completion:nil];
+    NSLog(@"Changing views");
 }
 
 - (void)viewDidLoad {

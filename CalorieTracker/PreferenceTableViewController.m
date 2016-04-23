@@ -15,7 +15,9 @@
 @implementation PreferenceTableViewController
 
 
-- (void)insertNewObject:(id)sender {
+- (void)goToNextPage:(id)sender
+{
+   [self performSegueWithIdentifier:@("PrefToAllergenSegue") sender:self];
 }
 
 - (void)viewDidLoad {
@@ -24,17 +26,18 @@
     self.prefs = [[NSMutableArray alloc] init];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.title = @"what are your preferences?";
+    self.title = @"What are your preferences?";
 
     // Uncomment the following line to preserve selection between presentations.
      self.clearsSelectionOnViewWillAppear = NO;
     
 //    [self.navigation setBarTintColor:[UIColor yellowColor]];
-        UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
+//        UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
+    UIBarButtonItem *nextButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(goToNextPage:)];
     
     [self.navigationController.navigationBar setHidden:NO];
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-     self.navigationItem.rightBarButtonItem = addButton;
+     self.navigationItem.rightBarButtonItem = nextButton;
     
 }
 
@@ -57,7 +60,7 @@
 // the cell will be returned to the tableView
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"FEEGE");
+//    NSLog(@"FEEGE");
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"preflabel"forIndexPath:indexPath];
     
     if (cell == nil)

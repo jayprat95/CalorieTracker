@@ -14,16 +14,36 @@
 
 @implementation AllergenTableViewController
 
+- (void)goToNextPage:(id)sender
+{
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"mainStoryBoardID"];
+    
+    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    
+    [self presentViewController:vc animated:YES completion:nil];
+    NSLog(@"Trying to go to home page");
+//    [self performSegueWithIdentifier:@("PrefToAllergenSegue") sender:self];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"allergen view tried to load");
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    UIBarButtonItem *nextButton = [[UIBarButtonItem alloc] init];
-    [nextButton setTitle:@"Next"];
+//    UIBarButtonItem *nextButton = [[UIBarButtonItem alloc] init];
+//    [nextButton setTitle:@"Next"];
+//    self.navigationItem.rightBarButtonItem = nextButton;
+    UIBarButtonItem *nextButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(goToNextPage:)];
+    
+    [self.navigationController.navigationBar setHidden:NO];
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     self.navigationItem.rightBarButtonItem = nextButton;
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,27 +57,28 @@
     return 1;
 }
 
-// number of row in the section, I assume there is only 1 row
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSLog(@"NUMROWS CALLEd");
+    NSLog(@"NUM ROWS CALLED");
     return [[[NSUserDefaults standardUserDefaults] dictionaryForKey:@"DictKey"] count];
 }
 
 // the cell will be returned to the tableView
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"TEST");
+    NSLog(@"CELLFORROW");
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"allergenslabel"forIndexPath:indexPath];
     
     if (cell == nil)
     {
+        NSLog(@"Cell is null");
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"allergenslabel"];
     }
     
-    NSDictionary *dict = [[NSUserDefaults standardUserDefaults] dictionaryForKey:@"DictKey"];
-    NSArray * values = [dict allValues];
-    cell.textLabel.text = values[indexPath.row];
+    NSLog(@"Making Dictionary");
+//    NSDictionary *dict = [[NSUserDefaults standardUserDefaults] dictionaryForKey:@"DictKey"];
+//    NSArray * values = [dict allValues];
+//    cell.textLabel.text = values[indexPath.row];
     
     NSLog(@"something printed %ld", (long)indexPath.row);
     
