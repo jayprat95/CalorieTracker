@@ -69,6 +69,10 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"allergenslabel"];
     }
     
+    NSDictionary *dict = [[NSUserDefaults standardUserDefaults] dictionaryForKey:@"DictKey"];
+    NSArray * values = [dict allKeys];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", values[indexPath.row]];
+    
     return cell;
 }
 
@@ -79,6 +83,7 @@
     
     if (cell.selected)
     {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
         [self.allergens removeObject:cell];
     }
     else

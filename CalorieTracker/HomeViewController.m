@@ -7,11 +7,12 @@
 //
 
 #import "HomeViewController.h"
+#import "NutritionViewController.h"
 
 @interface HomeViewController ()
 
 @property (weak, nonatomic) IBOutlet UIStackView *stackView;
-@property (weak, nonatomic) IBOutlet UIScrollView *breakfastView;
+@property (weak, nonatomic) IBOutlet UIScrollView *breakfastScrollView;
 
 @end
 
@@ -60,8 +61,65 @@
     [[NSUserDefaults standardUserDefaults] setFloat:self.calorieRem forKey:@"caloriesRemaining"];
     
     self.calorieRemainLabel.text = [NSString stringWithFormat:@"%f", self.calorieRem];
+    NSMutableArray *eatenDishes = [[[NSUserDefaults standardUserDefaults] arrayForKey:@"Eaten_Dishes"] mutableCopy];
+    [eatenDishes addObject:dish.title];
+    [[NSUserDefaults standardUserDefaults] setObject:eatenDishes forKey:@"Eaten_Dishes"];
+    
+    int y = 150;
+    for(id t in eatenDishes)
+    {
+        if ([t isKindOfClass:[NSString class]])
+        {
+            NSString *titlee = t;
+            UILabel *labb = [[UILabel alloc] init];
+            labb.text = titlee;
+            // CGRect CGRectMake ( CGFloat x, CGFloat y, CGFloat width, CGFloat height );
+            labb.frame = CGRectMake(30, y, 500, 20.0);
+            y += 40;
+            [self.view addSubview:labb];
+        }
+    }
+    
+    
+    
+    /**
+    // Add eaten dish to dishes list
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [button addTarget:self action:@selector(openFoodNutrition:) forControlEvents:UIControlEventTouchUpInside];
+    [button setTitle:dish.title forState:UIControlStateNormal];
+    button.frame = CGRectMake(80.0, 210.0, 160.0, 40.0);
+//    button.backgroundColor = [UIColor grayColor];
+    [self.eatenDishes addObject:button];
+    
+    
+    
+//    [self.breakfastScrollView addSubview:button];
+//    [self.stackView addSubview:button];
+    [self.view addSubview:button];
+    
+    int y = 80;
+    NSLog(@"Num dishes eaten today: %lu", (unsigned long)[self.eatenDishes count]);
+    for(id btn in self.eatenDishes)
+    {
+        if ([btn isKindOfClass:[UIButton class]])
+        {
+            UIButton *butn = btn;
+            butn.frame = CGRectMake(30, y, 200, 40.0);
+            y += 100;
+        }
+    }
+    
+    NSLog(@"%@", button);
+     */
+    
+    // Adding labels of foods eaten
+    
 }
 
+-(IBAction)openFoodNutrition: (id)sender
+{
+    NSLog(@"Clicked a button");
+}
 /*
 #pragma mark - Navigation
 

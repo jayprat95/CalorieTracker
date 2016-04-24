@@ -50,6 +50,10 @@
     [self addToFoods:[Parser parseFile:@"Turner"]];
     [self addToFoods:[Parser parseFile:@"Westend"]];
     
+    // List of eaten dishes
+    NSMutableArray *eatenDishes = [[NSMutableArray alloc] init];
+    [[NSUserDefaults standardUserDefaults] setObject:eatenDishes forKey:@"Eaten_Dishes"];
+    
     return YES;
 }
 

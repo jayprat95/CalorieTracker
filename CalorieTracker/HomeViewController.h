@@ -19,6 +19,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *calorieGoalLabel;
 
+@property Dish *dishToOpen;
+
 -(void) addFood:(Dish*)dish;
 
 @end

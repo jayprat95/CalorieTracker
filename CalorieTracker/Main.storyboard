@@ -336,6 +336,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="breakfastScrollView" destination="QFO-tO-vzG" id="1IZ-gE-B9p"/>
                         <outlet property="calorieGoalLabel" destination="Ehn-pn-59D" id="erg-YE-99W"/>
                         <outlet property="calorieRemainLabel" destination="12s-Aw-AG5" id="8Rl-8D-noM"/>
                         <outlet property="stackView" destination="fjz-a5-ht1" id="Xak-bB-NWk"/>
